@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711026634
+::res://::1711027438
 basss.jpg::CompressedTexture2D::4511064399638151403::1711026406::1711026637::1::::<><>::
-Bass_Scene.tscn::PackedScene::-1::1711026608::0::1::::<><>::res://basss.jpg
-default_env.tres::Environment::-1::1711026608::0::1::::<><>::
+Bass_Scene.tscn::PackedScene::8335926652327105743::1711027309::0::1::::<><>::uid://b5jgto0wwtjvf::::res://basss.jpg
+default_env.tres::Environment::7068334251248352330::1711027309::0::1::::<><>::
+download.jpg::CompressedTexture2D::4531117866704243779::1711027438::1711027438::1::::<><>::
 icon.png::CompressedTexture2D::5033296566826799032::1711026406::1711026637::1::::<><>::
