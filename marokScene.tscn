@@ -1,11 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://pmlrjau6jh14"]
+[gd_scene load_steps=3 format=3 uid="uid://pmlrjau6jh14"]
 
-[ext_resource type="Texture2D" uid="uid://b2hcwi1huvi7e" path="res://download (1).jpg" id="1_qkusi"]
+[ext_resource type="Script" path="res://marokScene.gd" id="1_wm05y"]
+[ext_resource type="AudioStream" uid="uid://c2dgi3ef8idrm" path="res://do-80236.mp3" id="2_h7as0"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_wm05y")
 
-[node name="Download(1)" type="Sprite2D" parent="."]
-position = Vector2(569, 214)
-texture = ExtResource("1_qkusi")
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_h7as0")
 
-[node name="CanvasModulate" type="CanvasModulate" parent="Download(1)"]
+[node name="Button" type="Button" parent="."]
+offset_left = 487.0
+offset_top = 293.0
+offset_right = 597.0
+offset_bottom = 354.0
+keep_pressed_outside = true
+text = "cRasH"
+
+[node name="HSlider" type="HSlider" parent="."]
+offset_left = 391.0
+offset_top = 163.0
+offset_right = 710.0
+offset_bottom = 262.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="drag_ended" from="HSlider" to="." method="_on_h_slider_drag_ended"]
