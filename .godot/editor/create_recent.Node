@@ -1,8 +1,8 @@
-VSlider
-CheckBox
+AudioStreamPlayer2D
 Panel
 Button
-AudioStreamPlayer2D
+VSlider
+CheckBox
 Control
 CanvasGroup
 HSlider

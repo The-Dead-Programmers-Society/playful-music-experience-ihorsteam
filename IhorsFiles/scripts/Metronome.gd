@@ -9,7 +9,8 @@ extends Control
 		
 @onready var bps:float  = 60/bpm
 var time:float  = 0.0
-@onready var main_sound = $"../Play/MainSound"
+@onready var main_sound = $"../MainSound"
+
 var repeat:bool  = false
 
 func _process(delta):
