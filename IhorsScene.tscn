@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://nu87ihhbfvsw"]
+[gd_scene load_steps=6 format=3 uid="uid://nu87ihhbfvsw"]
 
 [ext_resource type="Script" path="res://IhorsFiles/scripts/Playsound.gd" id="1_w7od5"]
 [ext_resource type="AudioStream" uid="uid://b5jgq3b5o1rmf" path="res://IhorsFiles/Sounds/C.mp3" id="2_ass2c"]
@@ -6,8 +6,6 @@
 [ext_resource type="Script" path="res://IhorsFiles/scripts/Metronome.gd" id="4_cvj4j"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_52i5n"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sloca"]
 
 [node name="IhorsScene" type="Control"]
 layout_mode = 3
@@ -95,30 +93,34 @@ offset_bottom = 449.0
 text = "B
 "
 
-[node name="Panel2" type="Panel" parent="."]
+[node name="CheckBox" type="CheckBox" parent="."]
 layout_mode = 0
-offset_left = 762.0
-offset_top = 243.0
-offset_right = 949.0
-offset_bottom = 283.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_sloca")
+offset_left = 781.0
+offset_top = 248.0
+offset_right = 864.0
+offset_bottom = 279.0
+text = "Repeat"
 script = ExtResource("4_cvj4j")
 
-[node name="CheckBox" type="CheckBox" parent="Panel2"]
+[node name="VSlider" type="VSlider" parent="."]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 5.0
-offset_right = 102.0
-offset_bottom = 36.0
-text = "Repeat"
+offset_left = 929.0
+offset_top = 256.0
+offset_right = 945.0
+offset_bottom = 524.0
+max_value = 220.0
+value = 60.0
+tick_count = 8
+ticks_on_borders = true
 
 [connection signal="pressed" from="Play" to="Play" method="_on_pressed"]
 [connection signal="pressed" from="Panel/C" to="Panel" method="_on_c_pressed"]
-[connection signal="pressed" from="Panel/D" to="Panel" method="_on_d_pressed"]
 [connection signal="pressed" from="Panel/D" to="Panel" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Panel/D" to="Panel" method="_on_d_pressed"]
 [connection signal="pressed" from="Panel/E" to="Panel" method="_on_e_pressed"]
 [connection signal="pressed" from="Panel/F" to="Panel" method="_on_f_pressed"]
 [connection signal="pressed" from="Panel/G" to="Panel" method="_on_g_pressed"]
 [connection signal="pressed" from="Panel/A" to="Panel" method="_on_a_pressed"]
 [connection signal="pressed" from="Panel/B" to="Panel" method="_on_b_pressed"]
-[connection signal="toggled" from="Panel2/CheckBox" to="Panel2" method="_on_check_box_toggled"]
+[connection signal="toggled" from="CheckBox" to="CheckBox" method="_on_toggled"]
+[connection signal="value_changed" from="VSlider" to="CheckBox" method="_on_v_slider_value_changed"]
