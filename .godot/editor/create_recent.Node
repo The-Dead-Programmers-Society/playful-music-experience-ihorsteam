@@ -1,4 +1,8 @@
-HSlider
+CheckBox
+Panel
 Button
 AudioStreamPlayer2D
+Control
+CanvasGroup
+HSlider
 CanvasModulate

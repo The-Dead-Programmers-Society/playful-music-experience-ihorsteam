@@ -1,5 +1,6 @@
+res://default_bus_layout.tres
 res://default_env.tres
+res://IhorsScene.tscn
 res://Bass_Scene.tscn
 res://marokScene.tscn
-res://marokScene.gd
-res://default_bus_layout.tres
+res://IhorsFiles/scripts/Metronome.gd
