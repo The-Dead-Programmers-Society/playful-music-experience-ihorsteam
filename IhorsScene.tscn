@@ -16,10 +16,8 @@ anchors_preset = 0
 [node name="MainSound" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(764, 154)
 stream = ExtResource("2_ass2c")
-bus = &"Recorder"
 
 [node name="Record" type="AudioStreamPlayer2D" parent="."]
-bus = &"IhorSounds"
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0

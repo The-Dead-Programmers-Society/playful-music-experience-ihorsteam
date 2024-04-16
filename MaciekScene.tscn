@@ -1,10 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://byfg1eu3qul41"]
+[gd_scene load_steps=4 format=3 uid="uid://byfg1eu3qul41"]
 
 [ext_resource type="Texture2D" uid="uid://b5jgto0wwtjvf" path="res://basss.jpg" id="1_4u2fg"]
+[ext_resource type="Script" path="res://MaciejFiles/Scripts/Bass.gd" id="1_owbtu"]
+[ext_resource type="AudioStream" uid="uid://bixtlyoqdkuos" path="res://MaciejFiles/Sounds/660533__theendofacycle__bass-guitar-pluck-02.wav" id="2_hb40h"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Bass_Scene" type="Node2D"]
 modulate = Color(0, 0.713726, 0.831373, 1)
+script = ExtResource("1_owbtu")
+
+[node name="Bass_Test" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_hb40h")
 
 [node name="Basss" type="Sprite2D" parent="."]
-position = Vector2(522, 305)
+position = Vector2(526, 325)
+scale = Vector2(0.7775, 0.7775)
 texture = ExtResource("1_4u2fg")
