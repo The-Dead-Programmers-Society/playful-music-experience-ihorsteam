@@ -1,8 +1,5 @@
 res://default_bus_layout.tres
 res://default_env.tres
-res://MaciekScene.tscn
-res://Bass.gd
-res://Bass_Scene.tscn
+res://MainMenuLobby.tscn
+res://CharacterBody2D.gd
 res://marokScene.tscn
-res://IhorsScene.tscn
-res://MaciejFiles/Scripts/Bass.gd
