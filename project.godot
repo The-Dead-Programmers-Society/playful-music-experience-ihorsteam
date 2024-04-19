@@ -19,6 +19,10 @@ config/icon="res://icon.png"
 
 driver/enable_input=true
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [input]
 
 Play_Bass={

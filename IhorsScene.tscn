@@ -1,18 +1,67 @@
-[gd_scene load_steps=8 format=3 uid="uid://nu87ihhbfvsw"]
+[gd_scene load_steps=15 format=3 uid="uid://nu87ihhbfvsw"]
 
+[ext_resource type="Texture2D" uid="uid://brkvcemqktgun" path="res://IhorsFiles/images/jewish-harp-jaw-harp-mouth-harp-doodle-icon-isolated-white-background_658737-352-removebg-preview.png" id="1_w6mqn"]
 [ext_resource type="AudioStream" uid="uid://b5jgq3b5o1rmf" path="res://IhorsFiles/Sounds/C.mp3" id="2_ass2c"]
+[ext_resource type="FontFile" uid="uid://dr2kpbdrilbo5" path="res://IhorsFiles/fonts/SpaceMono-Regular.ttf" id="3_076ue"]
 [ext_resource type="Script" path="res://IhorsFiles/scripts/Panel.gd" id="3_p15cu"]
 [ext_resource type="PackedScene" uid="uid://253lgy6aaehl" path="res://IhorsFiles/scenes/panel_3.tscn" id="3_y54yo"]
 [ext_resource type="Script" path="res://IhorsFiles/scripts/Metronome.gd" id="4_cvj4j"]
 [ext_resource type="Script" path="res://IhorsFiles/scripts/Recorder.gd" id="4_vvdit"]
+[ext_resource type="StyleBox" uid="uid://duyggt2v8tssq" path="res://IhorsFiles/styles/note_button_normal.tres" id="7_imt6c"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_52i5n"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_02p1r"]
+bg_color = Color(0.158472, 0.158472, 0.158472, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nigf5"]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwf8y"]
+bg_color = Color(0.6, 0.6, 0.6, 0.933333)
+
+[sub_resource type="LabelSettings" id="LabelSettings_bbax1"]
+font_size = 36
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ku01x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g83c2"]
 
 [node name="IhorsScene" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel3" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 650.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_02p1r")
+
+[node name="Jewish-harp-jaw-harp-mouth-harp-doodle-icon-isolated-white-background658737-352-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(1078, 152)
+rotation = -2.35619
+scale = Vector2(0.462532, 0.462532)
+texture = ExtResource("1_w6mqn")
+
+[node name="Jewish-harp-jaw-harp-mouth-harp-doodle-icon-isolated-white-background658737-352-removebg-preview4" type="Sprite2D" parent="."]
+position = Vector2(346, 145)
+rotation = -0.523598
+scale = Vector2(0.806103, 0.806103)
+texture = ExtResource("1_w6mqn")
+
+[node name="Jewish-harp-jaw-harp-mouth-harp-doodle-icon-isolated-white-background658737-352-removebg-preview2" type="Sprite2D" parent="."]
+position = Vector2(114, 573)
+rotation = -2.61799
+scale = Vector2(0.568625, 0.568625)
+texture = ExtResource("1_w6mqn")
+
+[node name="Jewish-harp-jaw-harp-mouth-harp-doodle-icon-isolated-white-background658737-352-removebg-preview3" type="Sprite2D" parent="."]
+position = Vector2(1158, 535)
+rotation = 0.523598
+scale = Vector2(0.568625, 0.568625)
+texture = ExtResource("1_w6mqn")
 
 [node name="MainSound" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(764, 154)
@@ -24,95 +73,79 @@ bus = &"IhorSounds"
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 117.0
+offset_left = 28.0
 offset_top = 66.0
-offset_right = 204.0
-offset_bottom = 531.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_52i5n")
-script = ExtResource("3_p15cu")
+offset_right = 381.0
+offset_bottom = 613.0
 
-[node name="C" type="Button" parent="Panel"]
+[node name="Start" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 15.0
-offset_top = 16.0
-offset_right = 74.0
-offset_bottom = 68.0
-text = "C
+offset_left = 22.0
+offset_top = 12.0
+offset_right = 161.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("3_076ue")
+theme_override_styles/normal = SubResource("StyleBoxFlat_nigf5")
+toggle_mode = true
+text = "Start
 "
-
-[node name="D" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 14.0
-offset_top = 76.0
-offset_right = 73.0
-offset_bottom = 128.0
-text = "D
-"
-
-[node name="E" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 15.0
-offset_top = 140.0
-offset_right = 72.0
-offset_bottom = 192.0
-text = "E"
-
-[node name="F" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 14.0
-offset_top = 204.0
-offset_right = 71.0
-offset_bottom = 256.0
-text = "F"
-
-[node name="G" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 14.0
-offset_top = 270.0
-offset_right = 71.0
-offset_bottom = 322.0
-text = "G
-"
-
-[node name="A" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 15.0
-offset_top = 332.0
-offset_right = 72.0
-offset_bottom = 384.0
-text = "A
-"
-
-[node name="B" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 13.0
-offset_top = 397.0
-offset_right = 70.0
-offset_bottom = 449.0
-text = "B
-"
-
-[node name="CheckBox" type="CheckBox" parent="."]
-layout_mode = 0
-offset_left = 31.0
-offset_top = 67.0
-offset_right = 114.0
-offset_bottom = 98.0
-text = "Repeat"
 script = ExtResource("4_cvj4j")
 
-[node name="VSlider" type="VSlider" parent="."]
+[node name="Clear" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 64.0
-offset_top = 186.0
-offset_right = 80.0
-offset_bottom = 454.0
+offset_left = 193.0
+offset_top = 12.0
+offset_right = 332.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("3_076ue")
+theme_override_styles/normal = SubResource("StyleBoxFlat_nigf5")
+toggle_mode = true
+text = "Clear"
+
+[node name="HSlider" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 112.0
+offset_right = 330.0
+offset_bottom = 128.0
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_cwf8y")
 max_value = 220.0
-value = 60.0
-tick_count = 8
-ticks_on_borders = true
+value = 100.0
+
+[node name="min" type="Label" parent="Panel/HSlider"]
+layout_mode = 0
+offset_top = 14.0
+offset_right = 40.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("3_076ue")
+text = "0"
+vertical_alignment = 1
+
+[node name="max" type="Label" parent="Panel/HSlider"]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 14.0
+offset_right = 336.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("3_076ue")
+text = "220
+"
+vertical_alignment = 1
+
+[node name="max2" type="Label" parent="Panel/HSlider"]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 32.0
+offset_right = 193.0
+offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("3_076ue")
+text = "BPM
+"
+label_settings = SubResource("LabelSettings_bbax1")
+vertical_alignment = 1
 
 [node name="Panel2" type="Panel" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 950.0
 offset_top = 44.0
@@ -141,9 +174,93 @@ text = "Play
 
 [node name="Pads" type="Control" parent="."]
 anchors_preset = 0
-offset_top = 66.0
-offset_right = 40.0
-offset_bottom = 106.0
+offset_left = 283.0
+offset_top = 148.0
+offset_right = 323.0
+offset_bottom = 188.0
+
+[node name="Panel" type="Panel" parent="Pads"]
+layout_mode = 0
+offset_left = 117.0
+offset_right = 204.0
+offset_bottom = 465.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_g83c2")
+script = ExtResource("3_p15cu")
+
+[node name="C" type="Button" parent="Pads/Panel"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 16.0
+offset_right = 74.0
+offset_bottom = 68.0
+theme_override_fonts/font = ExtResource("3_076ue")
+theme_override_styles/normal = ExtResource("7_imt6c")
+text = "C
+"
+
+[node name="D" type="Button" parent="Pads/Panel"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 76.0
+offset_right = 73.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("3_076ue")
+theme_override_styles/normal = ExtResource("7_imt6c")
+text = "D
+"
+
+[node name="E" type="Button" parent="Pads/Panel"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 140.0
+offset_right = 72.0
+offset_bottom = 192.0
+theme_override_fonts/font = ExtResource("3_076ue")
+theme_override_styles/normal = ExtResource("7_imt6c")
+text = "E"
+
+[node name="F" type="Button" parent="Pads/Panel"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 204.0
+offset_right = 71.0
+offset_bottom = 256.0
+theme_override_fonts/font = ExtResource("3_076ue")
+theme_override_styles/normal = ExtResource("7_imt6c")
+text = "F"
+
+[node name="G" type="Button" parent="Pads/Panel"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 270.0
+offset_right = 71.0
+offset_bottom = 322.0
+theme_override_fonts/font = ExtResource("3_076ue")
+theme_override_styles/normal = ExtResource("7_imt6c")
+text = "G
+"
+
+[node name="A" type="Button" parent="Pads/Panel"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 332.0
+offset_right = 72.0
+offset_bottom = 384.0
+theme_override_fonts/font = ExtResource("3_076ue")
+theme_override_styles/normal = ExtResource("7_imt6c")
+text = "A
+"
+
+[node name="B" type="Button" parent="Pads/Panel"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 397.0
+offset_right = 70.0
+offset_bottom = 449.0
+theme_override_fonts/font = ExtResource("3_076ue")
+theme_override_styles/normal = ExtResource("7_imt6c")
+text = "B
+"
 
 [node name="Panel3" parent="Pads" instance=ExtResource("3_y54yo")]
 layout_mode = 0
@@ -194,24 +311,16 @@ offset_top = 0.0
 offset_right = 811.0
 offset_bottom = 465.0
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 49.0
-offset_top = 99.0
-offset_right = 98.0
-offset_bottom = 130.0
-text = "Clear"
-
-[connection signal="pressed" from="Panel/C" to="Panel" method="_on_c_pressed"]
-[connection signal="pressed" from="Panel/D" to="Panel" method="_on_d_pressed"]
-[connection signal="pressed" from="Panel/D" to="Panel" method="_on_button_2_pressed"]
-[connection signal="pressed" from="Panel/E" to="Panel" method="_on_e_pressed"]
-[connection signal="pressed" from="Panel/F" to="Panel" method="_on_f_pressed"]
-[connection signal="pressed" from="Panel/G" to="Panel" method="_on_g_pressed"]
-[connection signal="pressed" from="Panel/A" to="Panel" method="_on_a_pressed"]
-[connection signal="pressed" from="Panel/B" to="Panel" method="_on_b_pressed"]
-[connection signal="toggled" from="CheckBox" to="CheckBox" method="_on_toggled"]
-[connection signal="value_changed" from="VSlider" to="CheckBox" method="_on_v_slider_value_changed"]
+[connection signal="toggled" from="Panel/Start" to="Panel/Start" method="_on_toggled"]
+[connection signal="pressed" from="Panel/Clear" to="Panel/Start" method="_on_clear_pressed"]
+[connection signal="value_changed" from="Panel/HSlider" to="Panel/Start" method="_on_h_slider_value_changed"]
 [connection signal="pressed" from="Panel2/Record" to="Panel2" method="_on_record_pressed"]
 [connection signal="pressed" from="Panel2/Play" to="Panel2" method="_on_play_pressed"]
-[connection signal="pressed" from="Button" to="CheckBox" method="_on_button_pressed"]
+[connection signal="pressed" from="Pads/Panel/C" to="Pads/Panel" method="_on_c_pressed"]
+[connection signal="pressed" from="Pads/Panel/D" to="Pads/Panel" method="_on_d_pressed"]
+[connection signal="pressed" from="Pads/Panel/D" to="Pads/Panel" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Pads/Panel/E" to="Pads/Panel" method="_on_e_pressed"]
+[connection signal="pressed" from="Pads/Panel/F" to="Pads/Panel" method="_on_f_pressed"]
+[connection signal="pressed" from="Pads/Panel/G" to="Pads/Panel" method="_on_g_pressed"]
+[connection signal="pressed" from="Pads/Panel/A" to="Pads/Panel" method="_on_a_pressed"]
+[connection signal="pressed" from="Pads/Panel/B" to="Pads/Panel" method="_on_b_pressed"]

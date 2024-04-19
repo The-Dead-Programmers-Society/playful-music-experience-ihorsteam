@@ -1,5 +1,5 @@
 extends Panel
-@onready var main_sound = $"../MainSound"
+@onready var main_sound = $"../../MainSound"
 
 func pitch_sound(note: float):
 	var pitch = pow(2, note/12.0)

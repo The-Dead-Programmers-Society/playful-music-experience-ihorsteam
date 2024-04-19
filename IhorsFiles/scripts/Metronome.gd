@@ -1,6 +1,6 @@
 extends Control
 
-@onready var bpm:float  = 60:
+@onready var bpm:float  = 100:
 	get:
 		return bpm
 	set(value):
@@ -12,13 +12,13 @@ var time:float  = 0.0
 @onready var main_sound = $"../MainSound"
 @export var array2D = []
 var current_row = 0
-@onready var panel_3 = $"../Pads/Panel3"
-@onready var panel_4 = $"../Pads/Panel4"
-@onready var panel_5 = $"../Pads/Panel5"
-@onready var panel_6 = $"../Pads/Panel6"
-@onready var panel_7 = $"../Pads/Panel7"
-@onready var panel_8 = $"../Pads/Panel8"
-@onready var panel_9 = $"../Pads/Panel9"
+@onready var panel_3 = $"../../Pads/Panel3"
+@onready var panel_4 = $"../../Pads/Panel4"
+@onready var panel_5 = $"../../Pads/Panel5"
+@onready var panel_6 = $"../../Pads/Panel6"
+@onready var panel_7 = $"../../Pads/Panel7"
+@onready var panel_8 = $"../../Pads/Panel8"
+@onready var panel_9 = $"../../Pads/Panel9"
 
 var repeat:bool  = false
 
@@ -55,14 +55,16 @@ func _on_toggled(toggled_on):
 	current_row = 0
 	pass # Replace with function body.
 
-
-func _on_v_slider_value_changed(value):
-	bpm = value
-	pass # Replace with function body.
-
-
-func _on_button_pressed():
+func _on_clear_pressed():
 	for i in array2D.size():
 		for j in array2D[i].size():
 			array2D[i][j].toggleOff()
+	pass # Replace with function body.
+
+
+
+
+
+func _on_h_slider_value_changed(value):
+	bpm = value
 	pass # Replace with function body.
