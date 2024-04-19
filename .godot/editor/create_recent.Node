@@ -1,8 +1,8 @@
+Button
+Panel
 Label
 HSlider
-Panel
 SubViewport
-Button
 Control
 AudioStreamPlayer2D
 Camera2D
@@ -12,4 +12,3 @@ AnimatedSprite2D
 CharacterBody2D
 VSlider
 CheckBox
-CanvasGroup

@@ -9,7 +9,6 @@ extends Control
 		
 @onready var bps:float  = 60/bpm
 var time:float  = 0.0
-@onready var main_sound = $"../MainSound"
 @export var array2D = []
 var current_row = 0
 @onready var panel_3 = $"../../Pads/Panel3"

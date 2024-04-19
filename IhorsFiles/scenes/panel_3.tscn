@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://253lgy6aaehl"]
+[gd_scene load_steps=8 format=3 uid="uid://253lgy6aaehl"]
 
 [ext_resource type="Script" path="res://IhorsFiles/scripts/row.gd" id="1_jy528"]
 [ext_resource type="StyleBox" uid="uid://bpuhp01hkko65" path="res://IhorsFiles/styles/normal_button.tres" id="2_3a11p"]
@@ -8,6 +8,8 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_52i5n"]
 bg_color = Color(0.513233, 0.513233, 0.513233, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wdic4"]
 
 [node name="Panel3" type="Panel"]
 offset_left = 204.0
@@ -26,6 +28,7 @@ offset_bottom = 65.0
 theme_override_colors/icon_hover_color = Color(0.783064, 0.46071, 0.512091, 1)
 theme_override_styles/normal = ExtResource("2_3a11p")
 theme_override_styles/pressed = ExtResource("3_ywiie")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wdic4")
 toggle_mode = true
 text = "
 "
@@ -44,6 +47,7 @@ offset_right = 73.0
 offset_bottom = 129.0
 theme_override_styles/normal = ExtResource("2_3a11p")
 theme_override_styles/pressed = ExtResource("3_ywiie")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wdic4")
 toggle_mode = true
 text = "
 "
@@ -63,6 +67,7 @@ offset_right = 72.0
 offset_bottom = 194.0
 theme_override_styles/normal = ExtResource("2_3a11p")
 theme_override_styles/pressed = ExtResource("3_ywiie")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wdic4")
 toggle_mode = true
 script = ExtResource("2_8m0rk")
 current_note = 4
@@ -80,6 +85,7 @@ offset_right = 71.0
 offset_bottom = 256.0
 theme_override_styles/normal = ExtResource("2_3a11p")
 theme_override_styles/pressed = ExtResource("3_ywiie")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wdic4")
 toggle_mode = true
 script = ExtResource("2_8m0rk")
 current_note = 6
@@ -97,6 +103,7 @@ offset_right = 71.0
 offset_bottom = 322.0
 theme_override_styles/normal = ExtResource("2_3a11p")
 theme_override_styles/pressed = ExtResource("3_ywiie")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wdic4")
 toggle_mode = true
 text = "
 "
@@ -116,6 +123,7 @@ offset_right = 72.0
 offset_bottom = 386.0
 theme_override_styles/normal = ExtResource("2_3a11p")
 theme_override_styles/pressed = ExtResource("3_ywiie")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wdic4")
 toggle_mode = true
 text = "
 "
@@ -135,6 +143,7 @@ offset_right = 72.0
 offset_bottom = 448.0
 theme_override_styles/normal = ExtResource("2_3a11p")
 theme_override_styles/pressed = ExtResource("3_ywiie")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wdic4")
 toggle_mode = true
 text = "
 "
