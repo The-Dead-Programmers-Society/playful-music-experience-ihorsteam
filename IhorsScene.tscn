@@ -139,19 +139,68 @@ offset_bottom = 35.0
 text = "Play
 "
 
-[node name="Panel3" parent="." instance=ExtResource("3_y54yo")]
+[node name="Pads" type="Control" parent="."]
+anchors_preset = 0
+offset_top = 66.0
+offset_right = 40.0
+offset_bottom = 106.0
+
+[node name="Panel3" parent="Pads" instance=ExtResource("3_y54yo")]
 layout_mode = 0
 offset_left = 202.0
-offset_top = 65.0
+offset_top = 0.0
 offset_right = 289.0
-offset_bottom = 530.0
+offset_bottom = 465.0
 
-[node name="Panel4" parent="." instance=ExtResource("3_y54yo")]
+[node name="Panel4" parent="Pads" instance=ExtResource("3_y54yo")]
 layout_mode = 0
 offset_left = 289.0
-offset_top = 67.0
+offset_top = 0.0
 offset_right = 376.0
-offset_bottom = 532.0
+offset_bottom = 465.0
+
+[node name="Panel5" parent="Pads" instance=ExtResource("3_y54yo")]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 0.0
+offset_right = 463.0
+offset_bottom = 465.0
+
+[node name="Panel6" parent="Pads" instance=ExtResource("3_y54yo")]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 0.0
+offset_right = 550.0
+offset_bottom = 465.0
+
+[node name="Panel7" parent="Pads" instance=ExtResource("3_y54yo")]
+layout_mode = 0
+offset_left = 550.0
+offset_top = 0.0
+offset_right = 637.0
+offset_bottom = 465.0
+
+[node name="Panel8" parent="Pads" instance=ExtResource("3_y54yo")]
+layout_mode = 0
+offset_left = 637.0
+offset_top = 0.0
+offset_right = 724.0
+offset_bottom = 465.0
+
+[node name="Panel9" parent="Pads" instance=ExtResource("3_y54yo")]
+layout_mode = 0
+offset_left = 724.0
+offset_top = 0.0
+offset_right = 811.0
+offset_bottom = 465.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 99.0
+offset_right = 98.0
+offset_bottom = 130.0
+text = "Clear"
 
 [connection signal="pressed" from="Panel/C" to="Panel" method="_on_c_pressed"]
 [connection signal="pressed" from="Panel/D" to="Panel" method="_on_d_pressed"]
@@ -165,3 +214,4 @@ offset_bottom = 532.0
 [connection signal="value_changed" from="VSlider" to="CheckBox" method="_on_v_slider_value_changed"]
 [connection signal="pressed" from="Panel2/Record" to="Panel2" method="_on_record_pressed"]
 [connection signal="pressed" from="Panel2/Play" to="Panel2" method="_on_play_pressed"]
+[connection signal="pressed" from="Button" to="CheckBox" method="_on_button_pressed"]
