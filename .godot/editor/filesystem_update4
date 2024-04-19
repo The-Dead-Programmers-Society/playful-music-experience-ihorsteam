@@ -1,5 +1,11 @@
 res://default_bus_layout.tres
 res://default_env.tres
-res://MainMenuLobby.tscn
-res://CharacterBody2D.gd
 res://marokScene.tscn
+res://MainMenuLobby.tscn
+res://MaciekScene.tscn
+res://IhorsScene.tscn
+res://IhorsFiles/scripts/Metronome.gd
+res://IhorsFiles/scenes/panel_3.tscn
+res://IhorsFiles/scenes/row.gd
+res://IhorsFiles/scripts/Panel.gd
+res://IhorsFiles/scripts/button.gd
