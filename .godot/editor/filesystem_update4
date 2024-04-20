@@ -1,12 +1,1 @@
 res://default_bus_layout.tres
-res://default_env.tres
-res://marokScene.tscn
-res://IhorsFiles/styles/normal_button.tres
-res://IhorsFiles/styles/hover.tres
-res://IhorsFiles/styles/pressed_button.tres
-res://IhorsFiles/styles/regular_button.tres
-res://IhorsScene.tscn
-res://IhorsFiles/scenes/panel_3.tscn
-res://IhorsFiles/scenes/note.tscn
-res://IhorsFiles/scripts/button.gd
-res://IhorsFiles/scripts/mouseFollow.gd
