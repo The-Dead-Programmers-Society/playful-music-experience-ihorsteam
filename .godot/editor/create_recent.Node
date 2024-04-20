@@ -1,15 +1,14 @@
-GPUParticles2D
+AudioStreamPlayer2D
 Button
 Panel
+GPUParticles2D
 Label
 HSlider
 SubViewport
 Control
-AudioStreamPlayer2D
 Camera2D
 CollisionShape2D
 Sprite2D
 AnimatedSprite2D
 CharacterBody2D
 VSlider
-CheckBox
