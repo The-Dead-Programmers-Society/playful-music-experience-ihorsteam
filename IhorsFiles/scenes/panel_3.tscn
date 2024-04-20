@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://253lgy6aaehl"]
+[gd_scene load_steps=9 format=3 uid="uid://253lgy6aaehl"]
 
 [ext_resource type="Script" path="res://IhorsFiles/scripts/row.gd" id="1_jy528"]
 [ext_resource type="StyleBox" uid="uid://bpuhp01hkko65" path="res://IhorsFiles/styles/normal_button.tres" id="2_3a11p"]
 [ext_resource type="Script" path="res://IhorsFiles/scripts/button.gd" id="2_8m0rk"]
 [ext_resource type="AudioStream" uid="uid://b5jgq3b5o1rmf" path="res://IhorsFiles/Sounds/C.mp3" id="3_1eruj"]
 [ext_resource type="StyleBox" uid="uid://bxmly47n2mj1p" path="res://IhorsFiles/styles/pressed_button.tres" id="3_ywiie"]
+[ext_resource type="PackedScene" uid="uid://cbiuiiugp7q5v" path="res://IhorsFiles/scenes/note.tscn" id="6_px1y1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_52i5n"]
 bg_color = Color(0.513233, 0.513233, 0.513233, 1)
@@ -39,6 +40,10 @@ position = Vector2(-15, -16)
 stream = ExtResource("3_1eruj")
 bus = &"Recorder"
 
+[node name="Note" parent="C" instance=ExtResource("6_px1y1")]
+position = Vector2(30, 22)
+scale = Vector2(0.168172, 0.0305461)
+
 [node name="D" type="Button" parent="."]
 layout_mode = 0
 offset_left = 14.0
@@ -59,6 +64,9 @@ position = Vector2(-15, -16)
 stream = ExtResource("3_1eruj")
 bus = &"Recorder"
 
+[node name="Note" parent="D" instance=ExtResource("6_px1y1")]
+position = Vector2(31, 17)
+
 [node name="E" type="Button" parent="."]
 layout_mode = 0
 offset_left = 15.0
@@ -77,6 +85,9 @@ position = Vector2(-15, -16)
 stream = ExtResource("3_1eruj")
 bus = &"Recorder"
 
+[node name="Note" parent="E" instance=ExtResource("6_px1y1")]
+position = Vector2(31, 25)
+
 [node name="F" type="Button" parent="."]
 layout_mode = 0
 offset_left = 14.0
@@ -94,6 +105,9 @@ current_note = 6
 position = Vector2(-15, -16)
 stream = ExtResource("3_1eruj")
 bus = &"Recorder"
+
+[node name="Note" parent="F" instance=ExtResource("6_px1y1")]
+position = Vector2(27, 25)
 
 [node name="G" type="Button" parent="."]
 layout_mode = 0
@@ -115,6 +129,9 @@ position = Vector2(-15, -16)
 stream = ExtResource("3_1eruj")
 bus = &"Recorder"
 
+[node name="Note" parent="G" instance=ExtResource("6_px1y1")]
+position = Vector2(26, 17)
+
 [node name="A" type="Button" parent="."]
 layout_mode = 0
 offset_left = 15.0
@@ -135,6 +152,9 @@ position = Vector2(-15, -16)
 stream = ExtResource("3_1eruj")
 bus = &"Recorder"
 
+[node name="Note" parent="A" instance=ExtResource("6_px1y1")]
+position = Vector2(26, 27)
+
 [node name="B" type="Button" parent="."]
 layout_mode = 0
 offset_left = 15.0
@@ -154,6 +174,9 @@ current_note = 12
 position = Vector2(-15, -16)
 stream = ExtResource("3_1eruj")
 bus = &"Recorder"
+
+[node name="Note" parent="B" instance=ExtResource("6_px1y1")]
+position = Vector2(24, 20)
 
 [connection signal="toggled" from="C" to="C" method="_on_toggled"]
 [connection signal="toggled" from="D" to="D" method="_on_toggled"]

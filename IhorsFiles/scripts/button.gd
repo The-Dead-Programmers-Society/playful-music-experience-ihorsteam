@@ -6,6 +6,7 @@ var can_play:bool = false
 @onready var audio = $AudioStreamPlayer2D
 @onready var panel_3 = $".."
 var current_theme
+@onready var note = $Note
 
 
 func _ready():
@@ -16,7 +17,11 @@ func pitch_sound(note: float):
 	var pitch = pow(2, note/12.0)
 	audio.pitch_scale = pitch
 
-
+func play():
+	note.restart()
+	audio.play()
+	await get_tree().create_timer(0.2).timeout
+	note.emitting = false
 func _on_toggled(toggled_on):
 	can_play = toggled_on
 	pass # Replace with function body.

@@ -39,7 +39,7 @@ func _process(delta):
 			array2D[current_row][0].panel_turnOn()
 			for i in array2D[current_row]:
 				if(i.can_play):
-					i.audio.play()
+					i.play()
 			array2D[current_row][0].panel_turnOff()
 			current_row +=1
 		if(current_row > array2D.size() - 1):

@@ -11,3 +11,4 @@ res://IhorsFiles/styles/pressed_button.tres
 res://IhorsFiles/styles/note_button_normal.tres
 res://IhorsFiles/scripts/mouseFollow.gd
 res://IhorsFiles/scripts/effects_switcher.gd
+res://IhorsFiles/scenes/note.tscn

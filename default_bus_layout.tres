@@ -10,7 +10,7 @@ room_size = 1.0
 [sub_resource type="AudioEffectDistortion" id="AudioEffectDistortion_sylmi"]
 resource_name = "Distortion"
 pre_gain = 3.41
-drive = 0.2
+drive = 0.5
 
 [sub_resource type="AudioEffectDelay" id="AudioEffectDelay_lvovr"]
 resource_name = "Delay"

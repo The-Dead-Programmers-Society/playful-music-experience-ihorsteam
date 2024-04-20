@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://cbiuiiugp7q5v"]
+
+[ext_resource type="Texture2D" uid="uid://b7qmeq7rls78t" path="res://IhorsFiles/images/image (1).png" id="1_v2q28"]
+
+[sub_resource type="Curve" id="Curve_bjwc0"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.991453, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_e20sa"]
+curve = SubResource("Curve_bjwc0")
+
+[sub_resource type="Curve" id="Curve_uryph"]
+min_value = -2.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.358974, -1.53782), 0.0, 0.0, 0, 0, Vector2(0.826211, 0.848165), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_lyjrl"]
+curve = SubResource("Curve_uryph")
+
+[sub_resource type="Curve" id="Curve_7iw1q"]
+max_value = 3.0
+_data = [Vector2(0.193732, 0.288654), 0.0, 0.0, 0, 0, Vector2(1, 1.17798), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_hqdbq"]
+curve = SubResource("Curve_7iw1q")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bt1vn"]
+particle_flag_disable_z = true
+direction = Vector3(0, -20, 0)
+flatness = 0.51
+initial_velocity_min = 85.15
+initial_velocity_max = 691.72
+orbit_velocity_curve = SubResource("CurveTexture_lyjrl")
+radial_velocity_max = 668.07
+scale_over_velocity_curve = SubResource("CurveTexture_hqdbq")
+alpha_curve = SubResource("CurveTexture_e20sa")
+turbulence_noise_strength = 11.46
+turbulence_noise_scale = 8.685
+turbulence_noise_speed = Vector3(0, 1.81, 0)
+turbulence_influence_min = 0.565
+turbulence_influence_max = 1.0
+sub_emitter_keep_velocity = true
+
+[node name="Note" type="GPUParticles2D"]
+self_modulate = Color(0.598464, 0.453607, 0.0723186, 1)
+position = Vector2(495, 745)
+scale = Vector2(0.0669278, 0.0669278)
+emitting = false
+amount = 3
+amount_ratio = 0.5
+process_material = SubResource("ParticleProcessMaterial_bt1vn")
+texture = ExtResource("1_v2q28")
+visibility_rect = Rect2(-100, -100, 1, 1)
+local_coords = true
+trail_lifetime = 8.7
