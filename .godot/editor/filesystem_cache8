@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713653193
+::res://::1713654005
 Bass.gd::GDScript::-1::1713550884::0::1::::<>RefCounted<>::
 basss.jpg::CompressedTexture2D::4511064399638151403::1711035955::1711035955::1::::<><>::
 Bass_Scene.tscn::PackedScene::8335926652327105743::1713550884::0::1::::<><>::uid://b5jgto0wwtjvf::::res://basss.jpg<>uid://b5s5340ky2krb::::res://download.jpg
 CharacterBody2D.gd::GDScript::-1::1713550884::0::1::::<>CharacterBody2D<>::
 concept_Ihor.png::CompressedTexture2D::9144304696700651126::1712845844::1713198646::1::::<><>::
-default_bus_layout.tres::AudioBusLayout::7522001605600937292::1713577211::0::1::::<><>::
-default_env.tres::Environment::7068334251248352330::1713577970::0::1::::<><>::
+default_bus_layout.tres::AudioBusLayout::7522001605600937292::1713653195::0::1::::<><>::
+default_env.tres::Environment::7068334251248352330::1713654005::0::1::::<><>::
 do-80236.mp3::AudioStreamMP3::6674513344287710154::1712845864::1712845864::1::::<><>::
 download (1).jpg::CompressedTexture2D::4296131288347160876::1711035955::1711035955::1::::<><>::
 download.jpg::CompressedTexture2D::4531117866704243779::1711035955::1711035955::1::::<><>::
@@ -15,6 +15,13 @@ MaciekScene.tscn::PackedScene::4081685794658165184::1713550969::0::1::::<><>::ui
 MainMenuLobby.tscn::PackedScene::537120960653588273::1713550968::0::1::::<><>::res://CharacterBody2D.gd<>uid://b5jgto0wwtjvf::::res://basss.jpg<>uid://b5s5340ky2krb::::res://download.jpg
 marokScene.gd::GDScript::-1::1712845864::0::1::::<>Node2D<>::
 marokScene.tscn::PackedScene::1078303906696666341::1713577969::0::1::::<><>::res://marokScene.gd<>uid://c2dgi3ef8idrm::::res://do-80236.mp3
+::res://AlexFiles/::1713654508
+::res://AlexFiles/images/::1713654514
+hangdrum.png::CompressedTexture2D::2177672231321110281::1713654490::1713654516::1::::<><>::
+::res://AlexFiles/scenes/::1713654005
+alex_scene.tscn::PackedScene::1344099939088197156::1713654005::0::1::::<><>::
+::res://AlexFiles/sounds/::1713654365
+JHP C --.wav::AudioStreamWAV::4924731419772880466::1713654258::1713654365::1::::<><>::
 ::res://IhorsFiles/::1713569404
 ::res://IhorsFiles/fonts/::1713569398
 MajorMonoDisplay-Regular.ttf::FontFile::4216121565023713296::1692985884::1713561124::1::::<><>::
