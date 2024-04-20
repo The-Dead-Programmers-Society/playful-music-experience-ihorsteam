@@ -9,8 +9,8 @@
 [ext_resource type="Script" path="res://IhorsFiles/scripts/Metronome.gd" id="4_cvj4j"]
 [ext_resource type="Script" path="res://IhorsFiles/scripts/Recorder.gd" id="4_vvdit"]
 [ext_resource type="StyleBox" uid="uid://c7amlqtu33wew" path="res://IhorsFiles/styles/regular_button.tres" id="5_id2ku"]
+[ext_resource type="StyleBox" uid="uid://b0llgca4f2v3r" path="res://IhorsFiles/styles/hover.tres" id="6_ssf02"]
 [ext_resource type="Script" path="res://IhorsFiles/scripts/effects_switcher.gd" id="7_imswu"]
-[ext_resource type="StyleBox" uid="uid://duyggt2v8tssq" path="res://IhorsFiles/styles/note_button_normal.tres" id="7_imt6c"]
 [ext_resource type="StyleBox" uid="uid://bxmly47n2mj1p" path="res://IhorsFiles/styles/pressed_button.tres" id="7_jra7b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_02p1r"]
@@ -94,6 +94,7 @@ offset_right = 161.0
 offset_bottom = 87.0
 theme_override_fonts/font = ExtResource("3_076ue")
 theme_override_styles/normal = ExtResource("5_id2ku")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_2uvrp")
 toggle_mode = true
 text = "Start
@@ -108,6 +109,7 @@ offset_right = 332.0
 offset_bottom = 87.0
 theme_override_fonts/font = ExtResource("3_076ue")
 theme_override_styles/normal = ExtResource("5_id2ku")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_2uvrp")
 text = "Clear"
 
@@ -167,8 +169,11 @@ offset_left = 13.0
 offset_top = 27.0
 offset_right = 135.0
 offset_bottom = 130.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
 theme_override_styles/normal = ExtResource("5_id2ku")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/pressed = ExtResource("7_jra7b")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_i0wfb")
 toggle_mode = true
@@ -180,8 +185,11 @@ offset_left = 13.0
 offset_top = 157.0
 offset_right = 135.0
 offset_bottom = 260.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
 theme_override_styles/normal = ExtResource("5_id2ku")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/pressed = ExtResource("7_jra7b")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_i0wfb")
 toggle_mode = true
@@ -194,8 +202,11 @@ offset_left = 171.0
 offset_top = 27.0
 offset_right = 293.0
 offset_bottom = 130.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
 theme_override_styles/normal = ExtResource("5_id2ku")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/pressed = ExtResource("7_jra7b")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_i0wfb")
 toggle_mode = true
@@ -207,8 +218,11 @@ offset_left = 171.0
 offset_top = 157.0
 offset_right = 293.0
 offset_bottom = 260.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
 theme_override_styles/normal = ExtResource("5_id2ku")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/pressed = ExtResource("7_jra7b")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_i0wfb")
 toggle_mode = true
@@ -263,8 +277,10 @@ offset_left = 15.0
 offset_top = 16.0
 offset_right = 74.0
 offset_bottom = 68.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
-theme_override_styles/normal = ExtResource("7_imt6c")
+theme_override_styles/normal = ExtResource("7_jra7b")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_52ja4")
 text = "C
 "
@@ -275,8 +291,10 @@ offset_left = 14.0
 offset_top = 76.0
 offset_right = 73.0
 offset_bottom = 128.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
-theme_override_styles/normal = ExtResource("7_imt6c")
+theme_override_styles/normal = ExtResource("7_jra7b")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_52ja4")
 text = "D
 "
@@ -287,8 +305,10 @@ offset_left = 15.0
 offset_top = 140.0
 offset_right = 72.0
 offset_bottom = 192.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
-theme_override_styles/normal = ExtResource("7_imt6c")
+theme_override_styles/normal = ExtResource("7_jra7b")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_52ja4")
 text = "E"
 
@@ -298,8 +318,10 @@ offset_left = 14.0
 offset_top = 204.0
 offset_right = 71.0
 offset_bottom = 256.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
-theme_override_styles/normal = ExtResource("7_imt6c")
+theme_override_styles/normal = ExtResource("7_jra7b")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_52ja4")
 text = "F"
 
@@ -309,8 +331,10 @@ offset_left = 14.0
 offset_top = 270.0
 offset_right = 71.0
 offset_bottom = 322.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
-theme_override_styles/normal = ExtResource("7_imt6c")
+theme_override_styles/normal = ExtResource("7_jra7b")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_52ja4")
 text = "G
 "
@@ -321,8 +345,10 @@ offset_left = 15.0
 offset_top = 332.0
 offset_right = 72.0
 offset_bottom = 384.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
-theme_override_styles/normal = ExtResource("7_imt6c")
+theme_override_styles/normal = ExtResource("7_jra7b")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_52ja4")
 text = "A
 "
@@ -333,8 +359,10 @@ offset_left = 13.0
 offset_top = 397.0
 offset_right = 70.0
 offset_bottom = 449.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_076ue")
-theme_override_styles/normal = ExtResource("7_imt6c")
+theme_override_styles/normal = ExtResource("7_jra7b")
+theme_override_styles/hover = ExtResource("6_ssf02")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_52ja4")
 text = "B
 "
