@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://tfden3vv2rts"]
+[gd_scene load_steps=10 format=3 uid="uid://tfden3vv2rts"]
 
 [ext_resource type="Texture2D" uid="uid://6a47cw36xcgn" path="res://AlexFiles/images/hangdrum.png" id="1_xmj2q"]
 [ext_resource type="Script" path="res://AlexFiles/scripts/SoundButton.gd" id="2_x30vo"]
 [ext_resource type="AudioStream" uid="uid://ccftuvwnywfwc" path="res://AlexFiles/sounds/JHP C --.wav" id="3_xn3hf"]
+[ext_resource type="Script" path="res://AlexFiles/scripts/Recorder.gd" id="4_d05ty"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4uo5o"]
 
@@ -63,10 +64,10 @@ current_note = 4
 stream = ExtResource("3_xn3hf")
 
 [node name="G" type="Button" parent="Hangdrum"]
-offset_left = -59.4317
-offset_top = -483.122
-offset_right = 76.5683
-offset_bottom = -357.122
+offset_left = -72.8518
+offset_top = -486.956
+offset_right = 63.1482
+offset_bottom = -360.956
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxEmpty_4uo5o")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_wvtwj")
@@ -98,6 +99,24 @@ current_note = 10
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/A"]
 stream = ExtResource("3_xn3hf")
 
+[node name="A2" type="Button" parent="Hangdrum"]
+offset_left = 216.638
+offset_top = 239.644
+offset_right = 352.638
+offset_bottom = 365.644
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4uo5o")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wvtwj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0jg3r")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bvctj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b5wo6")
+text = "A"
+script = ExtResource("2_x30vo")
+current_note = 10
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/A2"]
+stream = ExtResource("3_xn3hf")
+
 [node name="F" type="Button" parent="Hangdrum"]
 offset_left = -488.873
 offset_top = -69.0174
@@ -116,12 +135,108 @@ current_note = 6
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/F"]
 stream = ExtResource("3_xn3hf")
 
+[node name="D" type="Button" parent="Hangdrum"]
+offset_left = -360.424
+offset_top = 233.892
+offset_right = -224.424
+offset_bottom = 359.892
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4uo5o")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wvtwj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0jg3r")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bvctj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b5wo6")
+text = "D"
+script = ExtResource("2_x30vo")
+current_note = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/D"]
+stream = ExtResource("3_xn3hf")
+
+[node name="D2" type="Button" parent="Hangdrum"]
+offset_left = -67.1003
+offset_top = -76.686
+offset_right = 68.8997
+offset_bottom = 49.314
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4uo5o")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wvtwj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0jg3r")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bvctj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b5wo6")
+text = "D"
+script = ExtResource("2_x30vo")
+current_note = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/D2"]
+stream = ExtResource("3_xn3hf")
+
+[node name="B" type="Button" parent="Hangdrum"]
+offset_left = -59.4317
+offset_top = 358.507
+offset_right = 76.5683
+offset_bottom = 484.507
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4uo5o")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wvtwj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0jg3r")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bvctj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b5wo6")
+text = "B"
+script = ExtResource("2_x30vo")
+current_note = 12
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/B"]
+stream = ExtResource("3_xn3hf")
+
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
 offset_left = 36.0
 offset_top = 55.0
 offset_right = 257.0
 offset_bottom = 604.0
+script = ExtResource("4_d05ty")
+
+[node name="Start" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 24.0
+offset_right = 186.0
+offset_bottom = 87.0
+text = "Start Recorder"
+
+[node name="Play" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 98.0
+offset_right = 185.0
+offset_bottom = 161.0
+text = "Play"
+
+[node name="VSlider" type="VSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 207.0
+offset_right = 121.0
+offset_bottom = 490.0
+max_value = 220.0
+value = 100.0
+
+[node name="max" type="Label" parent="Panel/VSlider"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = -8.0
+offset_right = 61.0
+offset_bottom = 15.0
+text = "220"
+
+[node name="min" type="Label" parent="Panel/VSlider"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 264.0
+offset_right = 67.0
+offset_bottom = 287.0
+text = "0"
 
 [node name="Panel2" type="Panel" parent="."]
 layout_mode = 0
@@ -134,4 +249,8 @@ offset_bottom = 604.0
 [connection signal="pressed" from="Hangdrum/E" to="Hangdrum/E" method="_on_pressed"]
 [connection signal="pressed" from="Hangdrum/G" to="Hangdrum/G" method="_on_pressed"]
 [connection signal="pressed" from="Hangdrum/A" to="Hangdrum/A" method="_on_pressed"]
+[connection signal="pressed" from="Hangdrum/A2" to="Hangdrum/A2" method="_on_pressed"]
 [connection signal="pressed" from="Hangdrum/F" to="Hangdrum/F" method="_on_pressed"]
+[connection signal="pressed" from="Hangdrum/D" to="Hangdrum/D" method="_on_pressed"]
+[connection signal="pressed" from="Hangdrum/D2" to="Hangdrum/D2" method="_on_pressed"]
+[connection signal="pressed" from="Hangdrum/B" to="Hangdrum/B" method="_on_pressed"]
