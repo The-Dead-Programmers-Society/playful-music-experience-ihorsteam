@@ -5,19 +5,18 @@ resource_name = "Record"
 
 [sub_resource type="AudioEffectReverb" id="AudioEffectReverb_id73n"]
 resource_name = "Reverb"
-room_size = 1.0
 
 [sub_resource type="AudioEffectDistortion" id="AudioEffectDistortion_sylmi"]
 resource_name = "Distortion"
-pre_gain = 3.41
-drive = 0.5
+pre_gain = 2.0
+drive = 0.25
 
 [sub_resource type="AudioEffectDelay" id="AudioEffectDelay_lvovr"]
 resource_name = "Delay"
 tap1_delay_ms = 20.0
-tap1_level_db = 0.0
+tap1_level_db = -0.4
 tap2_delay_ms = 390.0
-tap2_level_db = 0.0
+tap2_level_db = -2.05
 
 [sub_resource type="AudioEffectChorus" id="AudioEffectChorus_j4jyd"]
 resource_name = "Chorus"

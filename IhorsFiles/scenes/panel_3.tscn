@@ -44,7 +44,7 @@ bus = &"Recorder"
 
 [node name="Note" parent="C" instance=ExtResource("6_px1y1")]
 position = Vector2(30, 22)
-scale = Vector2(0.168172, 0.0305461)
+scale = Vector2(0.067, 0.067)
 
 [node name="D" type="Button" parent="."]
 layout_mode = 0

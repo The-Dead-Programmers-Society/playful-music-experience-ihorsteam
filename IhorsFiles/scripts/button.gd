@@ -30,7 +30,7 @@ func toggleOff():
 func panel_turnOn():
 	var style:StyleBoxFlat = StyleBoxFlat.new()
 	style.bg_color =  Color.BLACK
-	style.bg_color.a = 0.5
+	style.bg_color.a = 1
 	panel_3.add_theme_stylebox_override ("panel", style)
 func panel_turnOff():
 	await get_tree().create_timer(0.2).timeout
