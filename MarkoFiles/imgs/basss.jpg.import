@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5s5340ky2krb"
-path="res://.godot/imported/download.jpg-50b81f58c54b10518d62dc3618ffefd0.ctex"
+uid="uid://b5jgto0wwtjvf"
+path="res://.godot/imported/basss.jpg-adbe9a93f1ec48f212cf14278d764288.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://download.jpg"
-dest_files=["res://.godot/imported/download.jpg-50b81f58c54b10518d62dc3618ffefd0.ctex"]
+source_file="res://MarkoFiles/imgs/basss.jpg"
+dest_files=["res://.godot/imported/basss.jpg-adbe9a93f1ec48f212cf14278d764288.ctex"]
 
 [params]
 
