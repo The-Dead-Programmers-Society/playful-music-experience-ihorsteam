@@ -29,9 +29,14 @@ func _process(delta):
 
 
 func _on_start_toggled(toggled_on):
+	
+	if(isPlaying):
+		start.button_pressed = false
+		return
 	isRecording = toggled_on
 	if(isRecording):
 		start.text = "Recording..."
+		recording.clear()
 	else:
 		start.text = "Start Recording"
 		
