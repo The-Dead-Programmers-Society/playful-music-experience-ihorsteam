@@ -9,11 +9,6 @@ res://IhorsFiles/styles/regular_button.tres
 res://IhorsFiles/styles/hover_2.tres
 res://MainMenuLobby.tscn
 res://MaciekScene.tscn
-<<<<<<< Updated upstream
-res://MaciejFiles/Scripts/Bass.gd
-res://MarkoFiles/Scenes and Scripts/marokScene.tscn
-res://MarkoFiles/Scenes and Scripts/MainMenuLobby.tscn
-=======
 res://Marko Files/Bass_Scene.tscn
 res://Marko Files/MainMenuLobby.tscn
 res://Marko Files/marokScene.tscn
@@ -26,4 +21,4 @@ res://MarkoFiles/Scenes and Scripts/marokScene.tscn
 res://MarkoFiles/Scenes and Scripts/MainMenuLobby.tscn
 res://MarkoFiles/Scripts/marokScene.gd
 res://MarkoFiles/Scenes and Scripts/markoScene.tscn
->>>>>>> Stashed changes
+res://MarkoFiles/Scenes/markoScene.tscn
