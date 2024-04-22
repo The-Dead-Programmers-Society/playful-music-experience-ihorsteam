@@ -1,20 +1,3 @@
 res://default_bus_layout.tres
-res://Bass.gd
 res://default_env.tres
-res://marokScene.tscn
-res://IhorsFiles/styles/normal_button.tres
-res://IhorsFiles/styles/hover.tres
-res://IhorsFiles/styles/pressed_button.tres
-res://IhorsFiles/styles/regular_button.tres
-res://IhorsFiles/styles/hover_2.tres
-res://MainMenuLobby.tscn
 res://MaciekScene.tscn
-res://Marko Files/Bass_Scene.tscn
-res://Marko Files/MainMenuLobby.tscn
-res://Marko Files/marokScene.tscn
-res://Marko Files/Scenes and Scripts/MainMenuLobby.tscn
-res://Marko Files/Scenes and Scripts/marokScene.tscn
-res://Marko Files/Scenes and Scripts/Bass_Scene.tscn
-res://MarkoFiles/Scenes and Scripts/marokScene.gd
-res://AlexFiles/scenes/alex_scene.tscn
-res://MarkoFiles/Scenes and Scripts/marokScene.tscn
