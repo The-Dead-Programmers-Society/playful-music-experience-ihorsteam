@@ -1,4 +1,4 @@
-[gd_resource type="AudioBusLayout" load_steps=6 format=3 uid="uid://dffyjdgqr2j7a"]
+[gd_resource type="AudioBusLayout" load_steps=7 format=3 uid="uid://dffyjdgqr2j7a"]
 
 [sub_resource type="AudioEffectRecord" id="AudioEffectRecord_l775u"]
 resource_name = "Record"
@@ -20,6 +20,16 @@ tap2_level_db = -2.05
 
 [sub_resource type="AudioEffectChorus" id="AudioEffectChorus_j4jyd"]
 resource_name = "Chorus"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_yax3u"]
+resource_local_to_scene = true
+resource_name = "Reverb"
+room_size = 1.0
+damping = 0.96
+spread = 0.65
+hipass = 0.65
+dry = 0.5
+wet = 0.75
 
 [resource]
 bus/1/name = &"Recorder"
@@ -48,5 +58,7 @@ bus/3/name = &"MarkoSounds"
 bus/3/solo = false
 bus/3/mute = false
 bus/3/bypass_fx = false
-bus/3/volume_db = 0.0
+bus/3/volume_db = -0.00162125
 bus/3/send = &"Master"
+bus/3/effect/0/effect = SubResource("AudioEffectReverb_yax3u")
+bus/3/effect/0/enabled = false

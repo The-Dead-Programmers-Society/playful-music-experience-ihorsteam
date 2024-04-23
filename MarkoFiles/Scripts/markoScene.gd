@@ -13,6 +13,31 @@ func _on_h_slider_value_changed(value):
 	pass # Replace with function body.
 	
 func _process(_delta):
-	if Input.is_action_pressed("bark_sound"):
+	if Input.is_action_just_pressed("bark_sound"):
 		$dogbark.play()
+	if Input.is_action_just_pressed("Cnote"):
+		$C1.play()
+	if Input.is_action_just_pressed("Dnote"):
+		$D.play()
+	if Input.is_action_just_pressed("Enote"):
+		$E.play()
+		
 
+
+func _on_c_1_button_down():
+	$C1.play()
+	pass # Replace with function body.
+
+func _on_d_button_button_down():
+	$D.play()
+	pass # Replace with function body.
+
+
+func _on_e_button_button_down():
+	$E.play()
+	pass # Replace with function body.
+
+
+func _on_c_2_butt_button_down():
+	$C2.play()
+	pass # Replace with function body.

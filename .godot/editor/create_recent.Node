@@ -1,14 +1,14 @@
+Control
 AudioStreamPlayer2D
+AudioButton
+Button
 Sprite2D
 Label
 VSlider
-Button
 Panel
 GPUParticles2D
 HSlider
 SubViewport
-Control
 Camera2D
 CollisionShape2D
 AnimatedSprite2D
-CharacterBody2D
