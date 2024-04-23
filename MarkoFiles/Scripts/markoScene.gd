@@ -21,7 +21,14 @@ func _process(_delta):
 		$D.play()
 	if Input.is_action_just_pressed("Enote"):
 		$E.play()
-		
+	if Input.is_action_just_pressed("Fnote"):
+		$F.play()
+	if Input.is_action_just_pressed("Gnote"):
+		$G.play()
+	if Input.is_action_just_pressed("Anote"):
+		$A.play()
+	if Input.is_action_just_pressed("Bnote"):
+		$B.play()
 
 
 func _on_c_1_button_down():
@@ -32,12 +39,22 @@ func _on_d_button_button_down():
 	$D.play()
 	pass # Replace with function body.
 
-
 func _on_e_button_button_down():
 	$E.play()
 	pass # Replace with function body.
 
+func _on_f_button_button_down():
+	$F.play()
+	pass # Replace with function body.
 
-func _on_c_2_butt_button_down():
-	$C2.play()
+func _on_g_button_button_down():
+	$G.play()
+	pass # Replace with function body.
+
+func _on_a_button_button_down():
+	$A.play()
+	pass # Replace with function body.
+
+func _on_b_button_button_down():
+	$B.play()
 	pass # Replace with function body.
