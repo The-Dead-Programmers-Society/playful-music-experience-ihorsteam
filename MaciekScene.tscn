@@ -1,26 +1,46 @@
-[gd_scene load_steps=6 format=3 uid="uid://byfg1eu3qul41"]
+[gd_scene load_steps=7 format=3 uid="uid://byfg1eu3qul41"]
 
 [ext_resource type="Script" path="res://MaciejFiles/Scripts/Bass.gd" id="1_owbtu"]
 [ext_resource type="AudioStream" uid="uid://bixtlyoqdkuos" path="res://MaciejFiles/Sounds/660533__theendofacycle__bass-guitar-pluck-02.wav" id="2_hb40h"]
+[ext_resource type="Texture2D" uid="uid://dv1hpakpmtv70" path="res://Radar_Sweep.png" id="2_jj6rf"]
 [ext_resource type="Texture2D" uid="uid://7hlpjtbpq67n" path="res://MaciejFiles/Sprites/bass+body.png" id="3_he75r"]
 [ext_resource type="Texture2D" uid="uid://hn0ip3vy5yup" path="res://MaciejFiles/Sprites/bass_string.png" id="4_c147x"]
 [ext_resource type="Texture2D" uid="uid://b3vwq8dcmo8o4" path="res://MaciejFiles/Sprites/Radar_Ping_Grey.png" id="4_sb1hn"]
 
 [node name="Bass_Scene" type="Node2D"]
+rotation = 0.984302
 script = ExtResource("1_owbtu")
 
+[node name="PickUp3" type="Sprite2D" parent="."]
+position = Vector2(528.237, -193.366)
+scale = Vector2(1.38979, 2.11111)
+texture = ExtResource("2_jj6rf")
+
+[node name="PickUp2" type="Sprite2D" parent="."]
+modulate = Color(0, 0.643137, 0.643137, 1)
+position = Vector2(551.626, -165.866)
+scale = Vector2(1.22347, 2)
+texture = ExtResource("2_jj6rf")
+
+[node name="PickUp1" type="Sprite2D" parent="."]
+modulate = Color(0, 0.396078, 0.690196, 1)
+position = Vector2(578.874, -138.644)
+scale = Vector2(1.0281, 1.95061)
+texture = ExtResource("2_jj6rf")
+
 [node name="Bass_Test" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(79.8071, -636.866)
 stream = ExtResource("2_hb40h")
 
 [node name="Bass_Body" type="Sprite2D" parent="."]
-position = Vector2(567, 320)
+position = Vector2(646.807, -316.866)
 scale = Vector2(0.590164, 0.590164)
 texture = ExtResource("3_he75r")
 
 [node name="E" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0, 0.694118, 0.258824, 1)
-position = Vector2(515, 56)
+position = Vector2(595.572, -580.42)
 scale = Vector2(0.68, 0.68)
 texture = ExtResource("4_sb1hn")
 
@@ -29,7 +49,7 @@ texture = ExtResource("4_sb1hn")
 [node name="F" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(1, 0.917647, 0.2, 1)
-position = Vector2(515, 74)
+position = Vector2(595.572, -562.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -38,7 +58,7 @@ texture = ExtResource("4_sb1hn")
 [node name="Fsharp" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.827451, 1, 0.266667, 1)
-position = Vector2(515, 90)
+position = Vector2(595.572, -546.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -47,7 +67,7 @@ texture = ExtResource("4_sb1hn")
 [node name="G" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.721569, 0.360784, 1, 1)
-position = Vector2(515, 105)
+position = Vector2(595.572, -531.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -56,7 +76,7 @@ texture = ExtResource("4_sb1hn")
 [node name="Gsharp" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(1, 0.160784, 0.552941, 1)
-position = Vector2(515, 120)
+position = Vector2(595.572, -516.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -65,7 +85,7 @@ texture = ExtResource("4_sb1hn")
 [node name="A" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.372549, 0.682353, 1, 1)
-position = Vector2(515, 135)
+position = Vector2(595.572, -501.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -74,7 +94,7 @@ texture = ExtResource("4_sb1hn")
 [node name="Asharp" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.258824, 0.313726, 1, 1)
-position = Vector2(515, 149)
+position = Vector2(595.572, -487.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -83,7 +103,7 @@ texture = ExtResource("4_sb1hn")
 [node name="B" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(1, 0.333333, 0.294118, 1)
-position = Vector2(515, 165)
+position = Vector2(595.572, -471.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -92,7 +112,7 @@ texture = ExtResource("4_sb1hn")
 [node name="C" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.709804, 0, 0, 1)
-position = Vector2(515, 179)
+position = Vector2(595.572, -457.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -101,7 +121,7 @@ texture = ExtResource("4_sb1hn")
 [node name="Csharp" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0, 0.521569, 0.67451, 1)
-position = Vector2(515, 192)
+position = Vector2(595.572, -444.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -110,7 +130,7 @@ texture = ExtResource("4_sb1hn")
 [node name="D" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.482353, 0.796078, 0.721569, 1)
-position = Vector2(515, 206)
+position = Vector2(595.572, -430.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -119,7 +139,7 @@ texture = ExtResource("4_sb1hn")
 [node name="Dsharp" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0, 0, 0, 1)
-position = Vector2(515, 219)
+position = Vector2(595.572, -417.42)
 scale = Vector2(0.50697, 0.50697)
 texture = ExtResource("4_sb1hn")
 
@@ -128,7 +148,7 @@ texture = ExtResource("4_sb1hn")
 [node name="E2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0, 0.694118, 0.258824, 1)
-position = Vector2(515, 233)
+position = Vector2(595.572, -403.42)
 scale = Vector2(0.50697, 0.50697)
 texture = ExtResource("4_sb1hn")
 
@@ -137,7 +157,7 @@ texture = ExtResource("4_sb1hn")
 [node name="F2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(1, 0.917647, 0.2, 1)
-position = Vector2(515.429, 246.429)
+position = Vector2(596.001, -389.991)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -146,7 +166,7 @@ texture = ExtResource("4_sb1hn")
 [node name="Fsharp2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.827451, 1, 0.266667, 1)
-position = Vector2(515, 258)
+position = Vector2(595.572, -378.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -155,7 +175,7 @@ texture = ExtResource("4_sb1hn")
 [node name="G2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.721569, 0.360784, 1, 1)
-position = Vector2(515, 270)
+position = Vector2(595.572, -366.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -164,7 +184,7 @@ texture = ExtResource("4_sb1hn")
 [node name="Gsharp2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(1, 0.160784, 0.552941, 1)
-position = Vector2(515, 283)
+position = Vector2(595.572, -353.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -173,7 +193,7 @@ texture = ExtResource("4_sb1hn")
 [node name="A2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.372549, 0.682353, 1, 1)
-position = Vector2(515, 295)
+position = Vector2(595.572, -341.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -182,7 +202,7 @@ texture = ExtResource("4_sb1hn")
 [node name="Asharp2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.258824, 0.313726, 1, 1)
-position = Vector2(515, 306)
+position = Vector2(595.572, -330.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -191,7 +211,7 @@ texture = ExtResource("4_sb1hn")
 [node name="B2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(1, 0.333333, 0.294118, 1)
-position = Vector2(515, 317)
+position = Vector2(595.572, -319.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -200,7 +220,7 @@ texture = ExtResource("4_sb1hn")
 [node name="C2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.709804, 0, 0, 1)
-position = Vector2(515, 327)
+position = Vector2(595.572, -309.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -209,7 +229,7 @@ texture = ExtResource("4_sb1hn")
 [node name="Csharp2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0, 0.521569, 0.67451, 1)
-position = Vector2(515, 337)
+position = Vector2(595.572, -299.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
@@ -218,13 +238,13 @@ texture = ExtResource("4_sb1hn")
 [node name="D2" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.482353, 0.796078, 0.721569, 1)
-position = Vector2(515, 347)
+position = Vector2(595.572, -289.42)
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="D2"]
 
 [node name="Bass_String" type="Sprite2D" parent="."]
-position = Vector2(517, 322)
+position = Vector2(596.807, -314.866)
 scale = Vector2(0.59, 0.59)
 texture = ExtResource("4_c147x")
