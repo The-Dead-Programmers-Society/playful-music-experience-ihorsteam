@@ -45,6 +45,9 @@ func _on_start_toggled(toggled_on):
 
 
 func _on_play_toggled(toggled_on):
+	if(isRecording or recording.is_empty()):
+		play.button_pressed = false
+		return
 	isPlaying = toggled_on
 	if(isPlaying):
 		play.text = "Playing"

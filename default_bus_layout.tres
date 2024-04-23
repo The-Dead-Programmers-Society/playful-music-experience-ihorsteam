@@ -1,4 +1,4 @@
-[gd_resource type="AudioBusLayout" load_steps=7 format=3 uid="uid://dffyjdgqr2j7a"]
+[gd_resource type="AudioBusLayout" load_steps=12 format=3 uid="uid://dffyjdgqr2j7a"]
 
 [sub_resource type="AudioEffectRecord" id="AudioEffectRecord_l775u"]
 resource_name = "Record"
@@ -31,6 +31,45 @@ hipass = 0.65
 dry = 0.5
 wet = 0.75
 
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_pkvwp"]
+resource_name = "Delay"
+dry = 0.0
+tap1_level_db = -3.0
+tap2_level_db = -6.0
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_ulm13"]
+resource_name = "Reverb"
+damping = 0.0
+dry = 0.0
+wet = 1.0
+
+[sub_resource type="AudioEffectDistortion" id="AudioEffectDistortion_8i26q"]
+resource_name = "Distortion"
+pre_gain = 1.0
+drive = 0.5
+
+[sub_resource type="AudioEffectChorus" id="AudioEffectChorus_5v0pg"]
+resource_name = "Chorus"
+voice_count = 4
+dry = 0.0
+wet = 1.0
+voice/3/delay_ms = 12.0
+voice/3/rate_hz = 1.0
+voice/3/depth_ms = 0.0
+voice/3/level_db = 0.0
+voice/3/cutoff_hz = 16000.0
+voice/3/pan = 0.0
+voice/4/delay_ms = 12.0
+voice/4/rate_hz = 1.0
+voice/4/depth_ms = 0.0
+voice/4/level_db = 0.0
+voice/4/cutoff_hz = 16000.0
+voice/4/pan = 0.0
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_id7ag"]
+resource_name = "PitchShift"
+pitch_scale = 0.5
+
 [resource]
 bus/1/name = &"Recorder"
 bus/1/solo = false
@@ -62,3 +101,19 @@ bus/3/volume_db = -0.00162125
 bus/3/send = &"Master"
 bus/3/effect/0/effect = SubResource("AudioEffectReverb_yax3u")
 bus/3/effect/0/enabled = false
+bus/4/name = &"AlexBus"
+bus/4/solo = false
+bus/4/mute = false
+bus/4/bypass_fx = false
+bus/4/volume_db = 0.0
+bus/4/send = &"Master"
+bus/4/effect/0/effect = SubResource("AudioEffectDelay_pkvwp")
+bus/4/effect/0/enabled = false
+bus/4/effect/1/effect = SubResource("AudioEffectReverb_ulm13")
+bus/4/effect/1/enabled = false
+bus/4/effect/2/effect = SubResource("AudioEffectDistortion_8i26q")
+bus/4/effect/2/enabled = false
+bus/4/effect/3/effect = SubResource("AudioEffectChorus_5v0pg")
+bus/4/effect/3/enabled = false
+bus/4/effect/4/effect = SubResource("AudioEffectPitchShift_id7ag")
+bus/4/effect/4/enabled = false

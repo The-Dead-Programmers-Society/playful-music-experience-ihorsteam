@@ -1,9 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://tfden3vv2rts"]
+[gd_scene load_steps=16 format=3 uid="uid://tfden3vv2rts"]
 
 [ext_resource type="Texture2D" uid="uid://6a47cw36xcgn" path="res://AlexFiles/images/hangdrum.png" id="1_xmj2q"]
 [ext_resource type="Script" path="res://AlexFiles/scripts/SoundButton.gd" id="2_x30vo"]
 [ext_resource type="AudioStream" uid="uid://ccftuvwnywfwc" path="res://AlexFiles/sounds/JHP C --.wav" id="3_xn3hf"]
 [ext_resource type="Script" path="res://AlexFiles/scripts/Recorder.gd" id="4_d05ty"]
+[ext_resource type="StyleBox" uid="uid://c7amlqtu33wew" path="res://IhorsFiles/styles/regular_button.tres" id="5_habfb"]
+[ext_resource type="Script" path="res://AlexFiles/scripts/EffectsPanel.gd" id="5_ld5ix"]
+[ext_resource type="StyleBox" uid="uid://b0llgca4f2v3r" path="res://IhorsFiles/styles/hover.tres" id="6_rq8qa"]
+[ext_resource type="StyleBox" uid="uid://doigjyl3ovp83" path="res://AlexFiles/styles/button_pressed.tres" id="7_opahj"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4uo5o"]
 
@@ -14,6 +18,10 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bvctj"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b5wo6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ccsox"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j48d0"]
 
 [node name="AlexScene" type="Control"]
 layout_mode = 3
@@ -212,6 +220,10 @@ offset_left = 35.0
 offset_top = 24.0
 offset_right = 186.0
 offset_bottom = 87.0
+theme_override_styles/normal = ExtResource("5_habfb")
+theme_override_styles/hover = ExtResource("6_rq8qa")
+theme_override_styles/pressed = ExtResource("7_opahj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ccsox")
 toggle_mode = true
 text = "Start Recorder"
 
@@ -221,6 +233,10 @@ offset_left = 34.0
 offset_top = 98.0
 offset_right = 185.0
 offset_bottom = 161.0
+theme_override_styles/normal = ExtResource("5_habfb")
+theme_override_styles/hover = ExtResource("6_rq8qa")
+theme_override_styles/pressed = ExtResource("7_opahj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j48d0")
 toggle_mode = true
 text = "Play"
 
@@ -255,6 +271,7 @@ offset_left = 907.0
 offset_top = 55.0
 offset_right = 1128.0
 offset_bottom = 604.0
+script = ExtResource("5_ld5ix")
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel2"]
 layout_mode = 1
@@ -279,27 +296,32 @@ theme_override_constants/v_separation = 40
 [node name="Distortion" type="Button" parent="Panel2/MarginContainer/GridContainer"]
 custom_minimum_size = Vector2(150, 70)
 layout_mode = 2
+toggle_mode = true
 text = "Distortion"
 
 [node name="Reverb" type="Button" parent="Panel2/MarginContainer/GridContainer"]
 custom_minimum_size = Vector2(150, 70)
 layout_mode = 2
+toggle_mode = true
 text = "Reverb"
 
-[node name="Distortion3" type="Button" parent="Panel2/MarginContainer/GridContainer"]
+[node name="Delay" type="Button" parent="Panel2/MarginContainer/GridContainer"]
 custom_minimum_size = Vector2(150, 70)
 layout_mode = 2
-text = "Distortion"
+toggle_mode = true
+text = "Delay"
 
-[node name="Distortion4" type="Button" parent="Panel2/MarginContainer/GridContainer"]
+[node name="Chorus" type="Button" parent="Panel2/MarginContainer/GridContainer"]
 custom_minimum_size = Vector2(150, 70)
 layout_mode = 2
-text = "Distortion"
+toggle_mode = true
+text = "Chorus"
 
-[node name="Distortion5" type="Button" parent="Panel2/MarginContainer/GridContainer"]
+[node name="Pitch" type="Button" parent="Panel2/MarginContainer/GridContainer"]
 custom_minimum_size = Vector2(150, 70)
 layout_mode = 2
-text = "Distortion"
+toggle_mode = true
+text = "Pitch Shift"
 
 [connection signal="pressed" from="Hangdrum/C" to="Hangdrum/C" method="_on_pressed"]
 [connection signal="pressed" from="Hangdrum/E" to="Hangdrum/E" method="_on_pressed"]
@@ -313,3 +335,8 @@ text = "Distortion"
 [connection signal="toggled" from="Recorder/Start" to="Recorder" method="_on_start_toggled"]
 [connection signal="toggled" from="Recorder/Play" to="Recorder" method="_on_play_toggled"]
 [connection signal="value_changed" from="Recorder/VSlider" to="Recorder" method="_on_v_slider_value_changed"]
+[connection signal="toggled" from="Panel2/MarginContainer/GridContainer/Distortion" to="Panel2" method="_on_distortion_toggled"]
+[connection signal="toggled" from="Panel2/MarginContainer/GridContainer/Reverb" to="Panel2" method="_on_reverb_toggled"]
+[connection signal="toggled" from="Panel2/MarginContainer/GridContainer/Delay" to="Panel2" method="_on_delay_toggled"]
+[connection signal="toggled" from="Panel2/MarginContainer/GridContainer/Chorus" to="Panel2" method="_on_chorus_toggled"]
+[connection signal="toggled" from="Panel2/MarginContainer/GridContainer/Pitch" to="Panel2" method="_on_pitch_toggled"]
