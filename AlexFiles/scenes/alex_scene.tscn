@@ -247,6 +247,38 @@ offset_top = 55.0
 offset_right = 1128.0
 offset_bottom = 604.0
 
+[node name="Distortion" type="Button" parent="Panel2"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 39.0
+offset_right = 178.0
+offset_bottom = 113.0
+text = "Distortion"
+
+[node name="Distortion2" type="Button" parent="Panel2"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 169.0
+offset_right = 178.0
+offset_bottom = 243.0
+text = "Distortion"
+
+[node name="Distortion3" type="Button" parent="Panel2"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 295.0
+offset_right = 176.0
+offset_bottom = 369.0
+text = "Distortion"
+
+[node name="Distortion4" type="Button" parent="Panel2"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 409.0
+offset_right = 178.0
+offset_bottom = 483.0
+text = "Distortion"
+
 [connection signal="pressed" from="Hangdrum/C" to="Hangdrum/C" method="_on_pressed"]
 [connection signal="pressed" from="Hangdrum/E" to="Hangdrum/E" method="_on_pressed"]
 [connection signal="pressed" from="Hangdrum/G" to="Hangdrum/G" method="_on_pressed"]
