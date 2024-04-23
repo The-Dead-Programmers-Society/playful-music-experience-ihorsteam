@@ -46,9 +46,15 @@ func _on_e_button_button_down():
 func _on_f_button_button_down():
 	$F.play()
 	pass # Replace with function body.
-	
-	
-	
-func _on_c_2_butt_button_down():
-	$C2.play()
-	pass # Replace with function body
+
+func _on_g_button_button_down():
+	$G.play()
+	pass # Replace with function body.
+
+func _on_a_button_button_down():
+	$A.play()
+	pass # Replace with function body.
+
+func _on_b_button_button_down():
+	$B.play()
+	pass # Replace with function body.

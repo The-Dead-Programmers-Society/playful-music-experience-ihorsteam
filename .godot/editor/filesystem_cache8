@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713911258
+::res://::1713911512
 concept_Ihor.png::CompressedTexture2D::9144304696700651126::1712846051::1713393693::1::::<><>::
 default_bus_layout.tres::AudioBusLayout::7522001605600937292::1713901672::0::1::::<><>::
 default_env.tres::Environment::7068334251248352330::1713911199::0::1::::<><>::
 IhorsScene.tscn::PackedScene::955803759861904294::1713910471::0::1::::<><>::uid://brkvcemqktgun::::res://IhorsFiles/images/jewish-harp-jaw-harp-mouth-harp-doodle-icon-isolated-white-background_658737-352-removebg-preview.png<>uid://b5jgq3b5o1rmf::::res://IhorsFiles/Sounds/C.mp3<>res://IhorsFiles/scripts/mouseFollow.gd<>uid://dr2kpbdrilbo5::::res://IhorsFiles/fonts/SpaceMono-Regular.ttf<>res://IhorsFiles/scripts/Panel.gd<>uid://253lgy6aaehl::::res://IhorsFiles/scenes/panel_3.tscn<>res://IhorsFiles/scripts/Metronome.gd<>res://IhorsFiles/scripts/Recorder.gd<>uid://c7amlqtu33wew::::res://IhorsFiles/styles/regular_button.tres<>uid://b0llgca4f2v3r::::res://IhorsFiles/styles/hover.tres<>uid://bj7u4rcicajqv::::res://IhorsFiles/styles/hover_2.tres<>res://IhorsFiles/scripts/effects_switcher.gd<>uid://bxmly47n2mj1p::::res://IhorsFiles/styles/pressed_button.tres
-MaciekScene.tscn::PackedScene::4081685794658165184::1713788455::0::1::::<><>::res://MaciejFiles/Scripts/Bass.gd<>uid://bixtlyoqdkuos::::res://MaciejFiles/Sounds/660533__theendofacycle__bass-guitar-pluck-02.wav<>uid://7hlpjtbpq67n::::res://MaciejFiles/Sprites/bass+body.png<>uid://hn0ip3vy5yup::::res://MaciejFiles/Sprites/bass_string.png<>uid://b3vwq8dcmo8o4::::res://MaciejFiles/Sprites/Radar_Ping_Grey.png
+MaciekScene.tscn::PackedScene::4081685794658165184::1713911238::0::1::::<><>::res://MaciejFiles/Scripts/Bass.gd<>uid://bixtlyoqdkuos::::res://MaciejFiles/Sounds/660533__theendofacycle__bass-guitar-pluck-02.wav<>uid://dv1hpakpmtv70::::res://Radar_Sweep.png<>uid://7hlpjtbpq67n::::res://MaciejFiles/Sprites/bass+body.png<>uid://hn0ip3vy5yup::::res://MaciejFiles/Sprites/bass_string.png<>uid://b3vwq8dcmo8o4::::res://MaciejFiles/Sprites/Radar_Ping_Grey.png
 Radar_Sweep.png::CompressedTexture2D::8687353411087859813::1713911238::1713911287::1::::<><>::
 ::res://AlexFiles/::1713659002
 ::res://AlexFiles/images/::1713659002
@@ -66,7 +66,7 @@ basss.jpg::CompressedTexture2D::4511064399638151403::1713393691::1713660192::1::
 download.jpg::CompressedTexture2D::4531117866704243779::1711567385::1713660192::1::::<><>::
 ::res://MarkoFiles/Scenes/::1713911258
 MainMenuLobby.tscn::PackedScene::537120960653588273::1713787653::0::1::::<><>::uid://b5jgto0wwtjvf::::res://MarkoFiles/imgs/basss.jpg<>res://MarkoFiles/Scripts/CharacterBody2D.gd<>uid://b5s5340ky2krb::::res://MarkoFiles/imgs/download.jpg
-markoScene.tscn::PackedScene::8330502505928123476::1713911199::0::1::::<><>::res://MarkoFiles/Scripts/markoScene.gd<>uid://dw35eitwqult2::::res://MarkoFiles/Audio/dog_barking.wav<>uid://ddctwgj74crts::::res://MarkoFiles/Audio/C2.wav<>uid://drulthqc5w35o::::res://MarkoFiles/Audio/C1.wav
+markoScene.tscn::PackedScene::8330502505928123476::1713911258::0::1::::<><>::res://MarkoFiles/Scripts/markoScene.gd<>uid://dw35eitwqult2::::res://MarkoFiles/Audio/dog_barking.wav<>uid://ddctwgj74crts::::res://MarkoFiles/Audio/C2.wav<>uid://drulthqc5w35o::::res://MarkoFiles/Audio/C1.wav
 ::res://MarkoFiles/Scripts/::1713911258
 CharacterBody2D.gd::GDScript::-1::1713397593::0::1::::<>CharacterBody2D<>::
 markoScene.gd::GDScript::-1::1713911258::0::1::::<>Node2D<>::
