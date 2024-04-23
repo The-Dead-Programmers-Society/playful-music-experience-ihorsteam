@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://byfg1eu3qul41"]
+[gd_scene load_steps=8 format=3 uid="uid://byfg1eu3qul41"]
 
 [ext_resource type="Script" path="res://MaciejFiles/Scripts/Bass.gd" id="1_owbtu"]
+[ext_resource type="Texture2D" uid="uid://cjxgjey5qon34" path="res://Bass_Background.psd.png" id="2_cd4gv"]
 [ext_resource type="AudioStream" uid="uid://bixtlyoqdkuos" path="res://MaciejFiles/Sounds/660533__theendofacycle__bass-guitar-pluck-02.wav" id="2_hb40h"]
 [ext_resource type="Texture2D" uid="uid://dv1hpakpmtv70" path="res://Radar_Sweep.png" id="2_jj6rf"]
 [ext_resource type="Texture2D" uid="uid://7hlpjtbpq67n" path="res://MaciejFiles/Sprites/bass+body.png" id="3_he75r"]
@@ -11,240 +12,280 @@
 rotation = 0.984302
 script = ExtResource("1_owbtu")
 
+[node name="BassBackground_psd" type="Sprite2D" parent="."]
+position = Vector2(595.587, -291.007)
+rotation = -0.98402
+scale = Vector2(1.08001, 1.00002)
+texture = ExtResource("2_cd4gv")
+
 [node name="PickUp3" type="Sprite2D" parent="."]
-position = Vector2(528.237, -193.366)
-scale = Vector2(1.38979, 2.11111)
+position = Vector2(517.784, -148.623)
+rotation = 0.10311
+scale = Vector2(1.38979, 2.50424)
 texture = ExtResource("2_jj6rf")
 
 [node name="PickUp2" type="Sprite2D" parent="."]
 modulate = Color(0, 0.643137, 0.643137, 1)
-position = Vector2(551.626, -165.866)
-scale = Vector2(1.22347, 2)
+position = Vector2(535.592, -110.375)
+rotation = 0.0925
+scale = Vector2(1.22347, 2.21402)
+skew = 0.015708
 texture = ExtResource("2_jj6rf")
 
 [node name="PickUp1" type="Sprite2D" parent="."]
 modulate = Color(0, 0.396078, 0.690196, 1)
-position = Vector2(578.874, -138.644)
-scale = Vector2(1.0281, 1.95061)
+position = Vector2(556.167, -76.2923)
+rotation = 0.0954605
+scale = Vector2(1.0281, 2.14859)
 texture = ExtResource("2_jj6rf")
 
 [node name="Bass_Test" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(79.8071, -636.866)
+position = Vector2(80.5545, -637.991)
 stream = ExtResource("2_hb40h")
 
 [node name="Bass_Body" type="Sprite2D" parent="."]
-position = Vector2(646.807, -316.866)
-scale = Vector2(0.590164, 0.590164)
+position = Vector2(640.429, -295.249)
+rotation = 0.151695
+scale = Vector2(0.733543, 0.733543)
 texture = ExtResource("3_he75r")
 
-[node name="E" type="Sprite2D" parent="."]
+[node name="Notes" type="Node2D" parent="."]
+position = Vector2(598.69, -440.226)
+rotation = -0.820426
+scale = Vector2(1.23708, 1.26803)
+
+[node name="E" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0, 0.694118, 0.258824, 1)
-position = Vector2(595.572, -580.42)
+position = Vector2(128.148, -85.3872)
+rotation = 0.984302
 scale = Vector2(0.68, 0.68)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="E"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/E"]
 
-[node name="F" type="Sprite2D" parent="."]
+[node name="F" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(1, 0.917647, 0.2, 1)
-position = Vector2(595.572, -562.42)
+position = Vector2(113.156, -75.4252)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="F"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/F"]
 
-[node name="Fsharp" type="Sprite2D" parent="."]
+[node name="Fsharp" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.827451, 1, 0.266667, 1)
-position = Vector2(595.572, -546.42)
+position = Vector2(99.8296, -66.5701)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Fsharp"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/Fsharp"]
 
-[node name="G" type="Sprite2D" parent="."]
+[node name="G" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.721569, 0.360784, 1, 1)
-position = Vector2(595.572, -531.42)
+position = Vector2(87.3363, -58.2684)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="G"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/G"]
 
-[node name="Gsharp" type="Sprite2D" parent="."]
+[node name="Gsharp" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(1, 0.160784, 0.552941, 1)
-position = Vector2(595.572, -516.42)
+position = Vector2(74.843, -49.9667)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Gsharp"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/Gsharp"]
 
-[node name="A" type="Sprite2D" parent="."]
+[node name="A" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.372549, 0.682353, 1, 1)
-position = Vector2(595.572, -501.42)
+position = Vector2(62.3497, -41.665)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="A"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/A"]
 
-[node name="Asharp" type="Sprite2D" parent="."]
+[node name="Asharp" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.258824, 0.313726, 1, 1)
-position = Vector2(595.572, -487.42)
+position = Vector2(50.6893, -33.9168)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Asharp"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/Asharp"]
 
-[node name="B" type="Sprite2D" parent="."]
+[node name="B" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(1, 0.333333, 0.294118, 1)
-position = Vector2(595.572, -471.42)
+position = Vector2(37.3631, -25.0617)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="B"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/B"]
 
-[node name="C" type="Sprite2D" parent="."]
+[node name="C" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.709804, 0, 0, 1)
-position = Vector2(595.572, -457.42)
+position = Vector2(25.7027, -17.3135)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="C"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/C"]
 
-[node name="Csharp" type="Sprite2D" parent="."]
+[node name="Csharp" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0, 0.521569, 0.67451, 1)
-position = Vector2(595.572, -444.42)
+position = Vector2(14.8752, -10.1187)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Csharp"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/Csharp"]
 
-[node name="D" type="Sprite2D" parent="."]
+[node name="D" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.482353, 0.796078, 0.721569, 1)
-position = Vector2(595.572, -430.42)
+position = Vector2(3.21478, -2.37045)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="D"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/D"]
 
-[node name="Dsharp" type="Sprite2D" parent="."]
+[node name="Dsharp" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0, 0, 0, 1)
-position = Vector2(595.572, -417.42)
+position = Vector2(-7.61285, 4.82434)
+rotation = 0.984302
 scale = Vector2(0.50697, 0.50697)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Dsharp"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/Dsharp"]
 
-[node name="E2" type="Sprite2D" parent="."]
+[node name="E2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0, 0.694118, 0.258824, 1)
-position = Vector2(595.572, -403.42)
+position = Vector2(-19.2733, 12.5726)
+rotation = 0.984302
 scale = Vector2(0.50697, 0.50697)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="E2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/E2"]
 
-[node name="F2" type="Sprite2D" parent="."]
+[node name="F2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(1, 0.917647, 0.2, 1)
-position = Vector2(596.001, -389.991)
+position = Vector2(-30.2205, 20.3621)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="F2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/F2"]
 
-[node name="Fsharp2" type="Sprite2D" parent="."]
+[node name="Fsharp2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.827451, 1, 0.266667, 1)
-position = Vector2(595.572, -378.42)
+position = Vector2(-40.0953, 26.4087)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Fsharp2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/Fsharp2"]
 
-[node name="G2" type="Sprite2D" parent="."]
+[node name="G2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.721569, 0.360784, 1, 1)
-position = Vector2(595.572, -366.42)
+position = Vector2(-50.0899, 33.05)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="G2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/G2"]
 
-[node name="Gsharp2" type="Sprite2D" parent="."]
+[node name="Gsharp2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(1, 0.160784, 0.552941, 1)
-position = Vector2(595.572, -353.42)
+position = Vector2(-60.9174, 40.2448)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Gsharp2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/Gsharp2"]
 
-[node name="A2" type="Sprite2D" parent="."]
+[node name="A2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.372549, 0.682353, 1, 1)
-position = Vector2(595.572, -341.42)
+position = Vector2(-70.912, 46.8861)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="A2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/A2"]
 
-[node name="Asharp2" type="Sprite2D" parent="."]
+[node name="Asharp2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.258824, 0.313726, 1, 1)
-position = Vector2(595.572, -330.42)
+position = Vector2(-80.0738, 52.974)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Asharp2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/Asharp2"]
 
-[node name="B2" type="Sprite2D" parent="."]
+[node name="B2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(1, 0.333333, 0.294118, 1)
-position = Vector2(595.572, -319.42)
+position = Vector2(-89.2355, 59.0619)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="B2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/B2"]
 
-[node name="C2" type="Sprite2D" parent="."]
+[node name="C2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.709804, 0, 0, 1)
-position = Vector2(595.572, -309.42)
+position = Vector2(-97.5644, 64.5964)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="C2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/C2"]
 
-[node name="Csharp2" type="Sprite2D" parent="."]
+[node name="Csharp2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0, 0.521569, 0.67451, 1)
-position = Vector2(595.572, -299.42)
+position = Vector2(-105.893, 70.1308)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Csharp2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/Csharp2"]
 
-[node name="D2" type="Sprite2D" parent="."]
+[node name="D2" type="Sprite2D" parent="Notes"]
 visible = false
 modulate = Color(0.482353, 0.796078, 0.721569, 1)
-position = Vector2(595.572, -289.42)
+position = Vector2(-114.222, 75.6653)
+rotation = 0.984302
 scale = Vector2(0.583873, 0.583873)
 texture = ExtResource("4_sb1hn")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="D2"]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Notes/D2"]
 
 [node name="Bass_String" type="Sprite2D" parent="."]
-position = Vector2(596.807, -314.866)
-scale = Vector2(0.59, 0.59)
+position = Vector2(580.215, -306.18)
+rotation = 0.15128
+scale = Vector2(0.684, 0.726)
 texture = ExtResource("4_c147x")

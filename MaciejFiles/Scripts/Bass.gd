@@ -1,29 +1,28 @@
 extends Node2D
 
-@onready var bass_test = $Bass_Test
-@onready var E = $E
-@onready var F = $F
-@onready var Fsharp = $Fsharp
-@onready var G = $G
-@onready var Gsharp = $Gsharp
-@onready var A = $A
-@onready var Asharp = $Asharp
-@onready var B = $B
-@onready var C = $C
-@onready var Csharp = $Csharp
-@onready var D = $D
-@onready var Dsharp = $Dsharp
-@onready var E2 = $E2
-@onready var F2= $F2
-@onready var Fsharp2= $Fsharp2
-@onready var G2 = $G2
-@onready var Gsharp2= $Gsharp2
-@onready var A2 = $A2
-@onready var Asharp2= $Asharp2
-@onready var B2= $B2
-@onready var C2= $C2
-@onready var Csharp2= $Csharp2
-@onready var D2 = $D2
+@onready var E = $Notes/E
+@onready var F = $Notes/F
+@onready var Fsharp = $Notes/Fsharp
+@onready var G = $Notes/G
+@onready var Gsharp = $Notes/Gsharp
+@onready var A = $Notes/A
+@onready var Asharp = $Notes/Asharp
+@onready var B = $Notes/B
+@onready var C = $Notes/C
+@onready var Csharp = $Notes/Csharp
+@onready var D = $Notes/D
+@onready var Dsharp = $Notes/Dsharp
+@onready var E2 = $Notes/E2
+@onready var F2= $Notes/F2
+@onready var Fsharp2= $Notes/Fsharp2
+@onready var G2 = $Notes/G2
+@onready var Gsharp2= $Notes/Gsharp2
+@onready var A2 = $Notes/A2
+@onready var Asharp2= $Notes/Asharp2
+@onready var B2= $Notes/B2
+@onready var C2= $Notes/C2
+@onready var Csharp2= $Notes/Csharp2
+@onready var D2 = $Notes/D2
 
 
 # Called when the node enters the scene tree for the first time.
