@@ -252,7 +252,7 @@ offset_left = 105.0
 offset_top = 207.0
 offset_right = 121.0
 offset_bottom = 490.0
-max_value = 220.0
+max_value = 300.0
 value = 100.0
 
 [node name="max" type="Label" parent="Recorder/VSlider"]
