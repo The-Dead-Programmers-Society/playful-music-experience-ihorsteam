@@ -54,6 +54,7 @@ script = ExtResource("2_x30vo")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/C"]
 stream = ExtResource("3_xn3hf")
+bus = &"AlexBus"
 
 [node name="E" type="Button" parent="Hangdrum"]
 offset_left = 222.389
@@ -72,6 +73,7 @@ current_note = 4
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/E"]
 stream = ExtResource("3_xn3hf")
+bus = &"AlexBus"
 
 [node name="G" type="Button" parent="Hangdrum"]
 offset_left = -72.8518
@@ -90,6 +92,7 @@ current_note = 8
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/G"]
 stream = ExtResource("3_xn3hf")
+bus = &"AlexBus"
 
 [node name="A" type="Button" parent="Hangdrum"]
 offset_left = -377.679
@@ -108,6 +111,7 @@ current_note = 10
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/A"]
 stream = ExtResource("3_xn3hf")
+bus = &"AlexBus"
 
 [node name="A2" type="Button" parent="Hangdrum"]
 offset_left = 216.638
@@ -126,6 +130,7 @@ current_note = 10
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/A2"]
 stream = ExtResource("3_xn3hf")
+bus = &"AlexBus"
 
 [node name="F" type="Button" parent="Hangdrum"]
 offset_left = -488.873
@@ -144,6 +149,7 @@ current_note = 6
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/F"]
 stream = ExtResource("3_xn3hf")
+bus = &"AlexBus"
 
 [node name="D" type="Button" parent="Hangdrum"]
 offset_left = -360.424
@@ -162,6 +168,7 @@ current_note = 2
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/D"]
 stream = ExtResource("3_xn3hf")
+bus = &"AlexBus"
 
 [node name="D2" type="Button" parent="Hangdrum"]
 offset_left = -67.1003
@@ -180,6 +187,7 @@ current_note = 2
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/D2"]
 stream = ExtResource("3_xn3hf")
+bus = &"AlexBus"
 
 [node name="B" type="Button" parent="Hangdrum"]
 offset_left = -59.4317
@@ -198,6 +206,7 @@ current_note = 12
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Hangdrum/B"]
 stream = ExtResource("3_xn3hf")
+bus = &"AlexBus"
 
 [node name="Recorder" type="Panel" parent="."]
 layout_mode = 0

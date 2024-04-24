@@ -6,7 +6,8 @@ res://IhorsFiles/styles/hover.tres
 res://IhorsFiles/styles/pressed_button.tres
 res://IhorsFiles/styles/regular_button.tres
 res://IhorsFiles/styles/hover_2.tres
-res://MaciekScene.tscn
-res://MaciejFiles/Scripts/Bass.gd
+res://AlexFiles/styles/button_pressed.tres
 res://IhorsScene.tscn
 res://AlexFiles/scenes/alex_scene.tscn
+res://MaciekScene.tscn
+res://main_scene.tscn
