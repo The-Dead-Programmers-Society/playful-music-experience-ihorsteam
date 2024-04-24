@@ -255,9 +255,9 @@ Group:  Ihor, Oleksandra, Marko, Maciej (playful-music-experience-ihorsteam)
 ## Description of the project
 I wanted to create something interactive for a user and I decided to create a hung drum with buttons to "play" it with user's mouse. I also added buttons with effects and a slider to it more fun and interesting to play. 
 ## Instructions for use
-
+User can press buttons which are located on the drum to make sounds. They also can record them, use the BPM slider, and use buttons with special effects which are located on the sides of the instrument to create their own music.
 ## How it works
-
+The H
 ## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
 | Class/asset | Source |
