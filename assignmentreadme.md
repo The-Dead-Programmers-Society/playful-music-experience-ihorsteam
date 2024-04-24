@@ -292,7 +292,9 @@ This is also triggered by the input, which gains access to specific 2D sprites i
 ## References
 
 ## What I am most proud of in the assignment
-I am proud of coming up with an interesting visual design for the virtual instrument.
+I am proud of coming up withand creating an interesting visual design for the virtual instrument.
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145370257/c3ef694a-8e7d-47f5-86db-bc1e487caa45)
+
 
 # Putting work together
 
