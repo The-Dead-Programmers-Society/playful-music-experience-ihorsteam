@@ -1,14 +1,19 @@
-# Project Title
+#Ihor
+## Jaw Harp Sequencer
 
-Name:
+Name: Ihor Korovanenko
 
-Student Number: 
+Student Number: C23716011
 
-Class Group:
+Class Group: 
 
 # Description of the project
 
+The idea was to create a sequencer that uses jaw harp sound, you can control bpm(0-300), apply effects, create some kind of nice sounding sequence
+
 # Instructions for use
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/7b6548ca-1b59-4191-b7f6-0ecea9092ad6)
+
 
 # How it works
 
@@ -24,7 +29,6 @@ Class Group:
 
 # What I am most proud of in the assignment
 
-# Proposal submitted earlier can go here:
 
 ## This is how to markdown text:
 
@@ -85,12 +89,4 @@ This is a youtube video:
 
 [![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
 
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
