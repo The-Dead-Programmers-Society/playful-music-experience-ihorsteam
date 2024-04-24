@@ -289,6 +289,30 @@ This is also triggered by the input, which gains access to specific 2D sprites i
 |-----------|-----------|
 | Bass.gd | Self written |
 
+| E.wav   | Self recorded|
+| F.wav   | Self recorded|
+| Fsharp.wav   | Self recorded|
+| G.wav   | Self recorded|
+| Gsharp.wav   | Self recorded|
+| A.wav   | Self recorded|
+| Asharp.wav   | Self recorded|
+| B.wav   | Self recorded|
+| C.wav   | Self recorded|
+| Csharp.wav   | Self recorded|
+| D.wav   | Self recorded|
+| Dsharp.wav   | Self recorded|
+| E2.wav   | Self recorded|
+
+| bass+body.PNG   | Self drawn|
+| bass_string.PNG   | Self drawn|
+| Radar_Ping.PNG   | Self drawn|
+| Radar_Ping_Grey.PNG   | Self drawn|
+| Bass_Background.psd.PNG   | Self drawn|
+| Radar_Sweep.PNG   | Self drawn|
+
+
+
+
 ## References
 
 ## What I am most proud of in the assignment
