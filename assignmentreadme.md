@@ -184,18 +184,104 @@ I get the index of the desired bus that each sound is switched to. And on each s
 
 | Class/asset | Source |
 |-----------|-----------|
-| effects_swithcer.gd | Self written |
-| Metronome.gd | Mostly self written, sequencer was modified from [reference](https://www.reddit.com/r/godot/comments/15jqlqh/how_do_i_make_a_metronome_that_activates_triggers/) |
-| mouseFollow.gd | Self written |
+| effects_switcher.gd | Self-written |
+| Metronome.gd | Mostly self-written, sequencer was modified from [reference](https://www.reddit.com/r/godot/comments/15jqlqh/how_do_i_make_a_metronome_that_activates_triggers/) |
+| mouseFollow.gd | Self-written |
 | Panel.gd | Modified from [reference](https://godotforums.org/d/28197-what-s-the-formula-to-change-audioeffectpitchshift-in-order-to-have-all-the-notes) |
-| column.gd | Self written |
-| button.gd | Self written, pitch sound was modified from [reference](https://godotforums.org/d/28197-what-s-the-formula-to-change-audioeffectpitchshift-in-order-to-have-all-the-notes) |
+| column.gd | Self-written |
+| button.gd | Self-written, pitch sound was modified from [reference](https://godotforums.org/d/28197-what-s-the-formula-to-change-audioeffectpitchshift-in-order-to-have-all-the-notes) |
 
 
 
 ## References
 
 ## What I am most proud of in the assignment
+
+This was the first time I had used a matrix in any of my code. The experience gave me a better understanding of working with arrays and will eventually help to write shorter and more efficient code in the future 
+
+# Marko
+## Project Title
+
+Name:
+
+Student Number: 
+
+Class Group:
+
+## Description of the project
+
+## Instructions for use
+
+## How it works
+
+## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
+
+| Class/asset | Source |
+|-----------|-----------|
+| MyClass.cs | Self written |
+| MyClass1.cs | Modified from [reference]() |
+| MyClass2.cs | From [reference]() |
+
+## References
+
+## What I am most proud of in the assignment
+
+# Oleksandra 
+## Project Title
+
+Name:
+
+Student Number: 
+
+Class Group:
+
+## Description of the project
+
+## Instructions for use
+
+## How it works
+
+## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
+
+| Class/asset | Source |
+|-----------|-----------|
+| MyClass.cs | Self written |
+| MyClass1.cs | Modified from [reference]() |
+| MyClass2.cs | From [reference]() |
+
+## References
+
+## What I am most proud of in the assignment
+
+# Maciej
+## Project Title
+
+Name:
+
+Student Number: 
+
+Class Group:
+
+## Description of the project
+
+## Instructions for use
+
+## How it works
+
+## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
+
+| Class/asset | Source |
+|-----------|-----------|
+| MyClass.cs | Self written |
+| MyClass1.cs | Modified from [reference]() |
+| MyClass2.cs | From [reference]() |
+
+## References
+
+## What I am most proud of in the assignment
+
+
+
 
 
 
