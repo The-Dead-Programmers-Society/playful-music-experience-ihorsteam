@@ -268,6 +268,7 @@ For this project I wanted to create a bass guitar with a unique visual design re
 The Alien Bass Guitar has a full scale of notes from E1 to E2, including the sharp notes. To play the notes press the corresponding numbers on a keyboard from "1" to "0" and then from "Q" to "E". (ex. "1" corresponds to E note and "Q" corresopnds to the D note)
 ## How it works
 The project`s code takes input from the keyboard through the input map.
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145370257/d466f221-ba91-4b13-89a0-df043607dd11)
 
 It tells the program what to do on a specific input.
 ![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145370257/d4f735d5-120f-4fc0-b09c-bda9f4af2cb0)
