@@ -60,18 +60,10 @@ scale = Vector2(0.702206, 0.707108)
 texture = ExtResource("2_5jxpu")
 
 [node name="C1_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 336.0
-offset_top = 39.0
-offset_right = 386.0
-offset_bottom = 314.0
-=======
 offset_left = 140.0
 offset_top = 64.0
 offset_right = 190.0
 offset_bottom = 339.0
->>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_gyw4d")
@@ -89,18 +81,10 @@ text = "
 C"
 
 [node name="D_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 388.0
-offset_top = 39.0
-offset_right = 438.0
-offset_bottom = 314.0
-=======
 offset_left = 192.0
 offset_top = 64.0
 offset_right = 242.0
 offset_bottom = 339.0
->>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_hwkuv")
@@ -108,36 +92,20 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Csharp_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 372.0
-offset_top = 39.0
-offset_right = 402.0
-offset_bottom = 203.0
-=======
 offset_left = 176.0
 offset_top = 64.0
 offset_right = 206.0
 offset_bottom = 228.0
->>>>>>> Stashed changes
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_uqogu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="E_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 440.0
-offset_top = 39.0
-offset_right = 490.0
-offset_bottom = 314.0
-=======
 offset_left = 244.0
 offset_top = 64.0
 offset_right = 294.0
 offset_bottom = 339.0
->>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -145,36 +113,20 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Dsharp_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 427.0
-offset_top = 39.0
-offset_right = 457.0
-offset_bottom = 203.0
-=======
 offset_left = 231.0
 offset_top = 64.0
 offset_right = 261.0
 offset_bottom = 228.0
->>>>>>> Stashed changes
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_uqogu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="F_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 492.0
-offset_top = 39.0
-offset_right = 542.0
-offset_bottom = 314.0
-=======
 offset_left = 296.0
 offset_top = 64.0
 offset_right = 346.0
 offset_bottom = 339.0
->>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -182,18 +134,10 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="G_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 544.0
-offset_top = 39.0
-offset_right = 594.0
-offset_bottom = 314.0
-=======
 offset_left = 348.0
 offset_top = 64.0
 offset_right = 398.0
 offset_bottom = 339.0
->>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -201,36 +145,20 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Fsharp_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 529.0
-offset_top = 39.0
-offset_right = 559.0
-offset_bottom = 203.0
-=======
 offset_left = 333.0
 offset_top = 64.0
 offset_right = 363.0
 offset_bottom = 228.0
->>>>>>> Stashed changes
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_uqogu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="A_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 596.0
-offset_top = 39.0
-offset_right = 646.0
-offset_bottom = 314.0
-=======
 offset_left = 400.0
 offset_top = 64.0
 offset_right = 450.0
 offset_bottom = 339.0
->>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -238,36 +166,20 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Gsharp_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 580.0
-offset_top = 39.0
-offset_right = 610.0
-offset_bottom = 203.0
-=======
 offset_left = 384.0
 offset_top = 64.0
 offset_right = 414.0
 offset_bottom = 228.0
->>>>>>> Stashed changes
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_uqogu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="B_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 648.0
-offset_top = 39.0
-offset_right = 698.0
-offset_bottom = 314.0
-=======
 offset_left = 452.0
 offset_top = 64.0
 offset_right = 502.0
 offset_bottom = 339.0
->>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -275,36 +187,20 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Asharp_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 632.0
-offset_top = 39.0
-offset_right = 662.0
-offset_bottom = 203.0
-=======
 offset_left = 436.0
 offset_top = 64.0
 offset_right = 466.0
 offset_bottom = 228.0
->>>>>>> Stashed changes
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_uqogu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="C2_button" type="Button" parent="Control"]
-<<<<<<< Updated upstream
-layout_mode = 0
-offset_left = 700.0
-offset_top = 39.0
-offset_right = 750.0
-offset_bottom = 314.0
-=======
 offset_left = 504.0
 offset_top = 64.0
 offset_right = 554.0
 offset_bottom = 339.0
->>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")

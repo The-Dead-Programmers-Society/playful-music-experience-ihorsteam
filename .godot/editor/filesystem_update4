@@ -1,24 +1,11 @@
 res://default_bus_layout.tres
 res://default_env.tres
-res://MarkoFiles/Scenes/markoScene.tscn
+res://IhorsScene.tscn
 res://IhorsFiles/styles/normal_button.tres
 res://IhorsFiles/styles/hover.tres
 res://IhorsFiles/styles/pressed_button.tres
 res://IhorsFiles/styles/regular_button.tres
 res://IhorsFiles/styles/hover_2.tres
-<<<<<<< Updated upstream
 res://AlexFiles/styles/button_pressed.tres
-res://IhorsScene.tscn
-res://MaciekScene.tscn
-res://main_scene.tscn
-<<<<<<< Updated upstream
 res://AlexFiles/scenes/alex_scene.tscn
-res://IhorsFiles/scripts/Metronome.gd
-=======
-=======
-res://IhorsScene.tscn
-res://AlexFiles/scenes/alex_scene.tscn
-res://MarkoFiles/Scripts/markoScene.gd
-res://MaciekScene.tscn
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+res://IhorsFiles/scenes/note.tscn
