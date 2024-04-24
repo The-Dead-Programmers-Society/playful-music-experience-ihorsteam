@@ -1,7 +1,10 @@
 res://default_bus_layout.tres
 res://default_env.tres
-res://AlexFiles/scenes/alex_scene.tscn
-res://AlexFiles/scripts/EffectsPanel.gd
-res://IhorsFiles/styles/regular_button.tres
+res://main_scene.tscn
+res://IhorsFiles/styles/normal_button.tres
 res://IhorsFiles/styles/hover.tres
-res://AlexFiles/scripts/Recorder.gd
+res://IhorsFiles/styles/pressed_button.tres
+res://IhorsFiles/styles/regular_button.tres
+res://IhorsFiles/styles/hover_2.tres
+res://IhorsFiles/scripts/menu.gd
+res://AlexFiles/styles/button_pressed.tres
