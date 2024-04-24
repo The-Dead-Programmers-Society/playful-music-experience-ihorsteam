@@ -202,6 +202,7 @@ I get the index of the desired bus that each sound is switched to. And on each s
 | button.gd | Self-written, pitch sound was modified from [reference](https://godotforums.org/d/28197-what-s-the-formula-to-change-audioeffectpitchshift-in-order-to-have-all-the-notes) |
 |jewish-harp-jaw-harp-mouth-harp-doodle-icon-isolated-white-background_658737-352-removebg-preview.png | [reference](https://www.freepik.com/premium-vector/jewish-harp-jaw-harp-mouth-harp-doodle-icon-isolated-white-background_32707512.htm) |
 | image(1).png | [reference](https://freepngimg.com/png/15277-musical-notes-free-download-png) |
+| C.mp3 | Modifed from [reference](https://www.oberton.pro/en/shop/zhestkaya-iz-latuni.html) |
 
 
 
@@ -313,7 +314,6 @@ This is also triggered by the input, which gains access to specific 2D sprites i
 | D.wav   | Self recorded|
 | Dsharp.wav   | Self recorded|
 | E2.wav   | Self recorded|
-
 | bass+body.PNG   | Self drawn|
 | bass_string.PNG   | Self drawn|
 | Radar_Ping.PNG   | Self drawn|
