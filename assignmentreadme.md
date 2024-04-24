@@ -190,6 +190,8 @@ I get the index of the desired bus that each sound is switched to. And on each s
 | Panel.gd | Modified from [reference](https://godotforums.org/d/28197-what-s-the-formula-to-change-audioeffectpitchshift-in-order-to-have-all-the-notes) |
 | column.gd | Self-written |
 | button.gd | Self-written, pitch sound was modified from [reference](https://godotforums.org/d/28197-what-s-the-formula-to-change-audioeffectpitchshift-in-order-to-have-all-the-notes) |
+|jewish-harp-jaw-harp-mouth-harp-doodle-icon-isolated-white-background_658737-352-removebg-preview.png | [reference](https://www.freepik.com/premium-vector/jewish-harp-jaw-harp-mouth-harp-doodle-icon-isolated-white-background_32707512.htm) |
+| image(1).png | [reference](https://freepngimg.com/png/15277-musical-notes-free-download-png) |
 
 
 
