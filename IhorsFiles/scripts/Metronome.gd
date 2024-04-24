@@ -10,7 +10,7 @@ extends Control
 @onready var bps:float  = 60/bpm
 var time:float  = 0.0
 @export var array2D = []
-var current_row = 0
+var current_column = 0
 @onready var panel_3 = $"../../Pads/Panel3"
 @onready var panel_4 = $"../../Pads/Panel4"
 @onready var panel_5 = $"../../Pads/Panel5"
@@ -36,14 +36,14 @@ func _process(delta):
 		if time >= bps:
 			
 			time -=bps
-			array2D[current_row][0].panel_turnOn()
-			for i in array2D[current_row]:
+			array2D[current_column][0].panel_turnOn()
+			for i in array2D[current_column]:
 				if(i.can_play):
 					i.play()
-			array2D[current_row][0].panel_turnOff()
-			current_row +=1
-		if(current_row > array2D.size() - 1):
-			current_row = 0
+			array2D[current_column][0].panel_turnOff()
+			current_column +=1
+		if(current_column > array2D.size() - 1):
+			current_column = 0
 			
 
 
@@ -51,7 +51,7 @@ func _process(delta):
 
 func _on_toggled(toggled_on):
 	repeat = toggled_on
-	current_row = 0
+	current_column = 0
 	pass # Replace with function body.
 
 func _on_clear_pressed():
