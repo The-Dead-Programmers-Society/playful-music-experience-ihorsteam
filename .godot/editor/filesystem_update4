@@ -9,3 +9,5 @@ res://IhorsFiles/styles/hover_2.tres
 res://AlexFiles/styles/button_pressed.tres
 res://AlexFiles/scenes/alex_scene.tscn
 res://IhorsFiles/scenes/note.tscn
+res://IhorsFiles/scenes/panel_3.tscn
+res://MarkoFiles/Scenes/markoScene.tscn

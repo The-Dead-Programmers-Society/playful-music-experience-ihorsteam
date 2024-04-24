@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://253lgy6aaehl"]
 
-[ext_resource type="Script" path="res://IhorsFiles/scripts/row.gd" id="1_jy528"]
+[ext_resource type="Script" path="res://IhorsFiles/scripts/column.gd" id="1_ettxn"]
 [ext_resource type="StyleBox" uid="uid://bpuhp01hkko65" path="res://IhorsFiles/styles/normal_button.tres" id="2_3a11p"]
 [ext_resource type="Script" path="res://IhorsFiles/scripts/button.gd" id="2_8m0rk"]
 [ext_resource type="AudioStream" uid="uid://b5jgq3b5o1rmf" path="res://IhorsFiles/Sounds/C.mp3" id="3_1eruj"]
@@ -19,7 +19,7 @@ offset_top = 66.0
 offset_right = 291.0
 offset_bottom = 531.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_52i5n")
-script = ExtResource("1_jy528")
+script = ExtResource("1_ettxn")
 
 [node name="C" type="Button" parent="."]
 layout_mode = 0
