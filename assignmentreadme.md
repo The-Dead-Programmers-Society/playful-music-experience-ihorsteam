@@ -9,11 +9,12 @@ Class Group:
 
 # Description of the project
 
-The idea was to create a sequencer that uses jaw harp sound, you can control bpm(0-300), apply effects, create some kind of nice sounding sequence
+The idea was to create a sequencer that uses jaw harp sound, the user can control bpm(0-300), apply effects, create some kind of nice sounding sequence
 
 # Instructions for use
 ![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/7b6548ca-1b59-4191-b7f6-0ecea9092ad6)
-\n Start button that starts and stops the sequencer
+
+Start button that starts and stops the sequencer
 
 ![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/662a7f96-c826-41bd-9aa7-60eb3ff6cfe3)
 The clear button clears all the notes the user has put on a sequencer
@@ -28,12 +29,11 @@ Panel with effects that can be applied to all sounds in the sequencer. Which are
 Notes panel with buttons that play each note once 
 
 ![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/c216af39-e781-40f6-9501-a1f5b2b20e7a)
-In the sequencer panel itself, notes can be activated or deactivated and each row is assigned to the note which it is adjacent.
-
-
+In the sequencer panel itself, notes can be activated or deactivated and each row is assigned to the note to which it is adjacent.
 
 
 # How it works
+
 
 # List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
