@@ -99,20 +99,99 @@ func _ready():
 ```
 Then the column of buttons itself has a script with an array setup in it.
 
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/193bc0f9-bab3-4546-a2e4-1147c9d5efaf)
 
+Note button is connected to a panel script that has:
 
+```GDScript
+func pitch_sound(note: float):
+	var pitch = pow(2, note/12.0)
+	main_sound.pitch_scale = pitch
+	main_sound.play()
+```
+Same pitch function as used before, but it changes only one audio source in the scene. 
 
+```GDScript
+func _on_c_pressed():
+	pitch_sound(0)
+	pass
+```
+Each note button is connected like so and changes pitch to adjust to a certain note that button is supposed to be.
 
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/5f4e957d-515c-474c-b6d5-fced8ef13188)
 
+The start button has a metronome script that has the main behavior of the whole project.
 
+```GDScript
+func _ready():
+	array2D.append(panel_3.buttons)
+	array2D.append(panel_4.buttons)
+	array2D.append(panel_5.buttons)
+	array2D.append(panel_6.buttons)
+	array2D.append(panel_7.buttons)
+	array2D.append(panel_8.buttons)
+	array2D.append(panel_9.buttons)
+```
+First of all, I get all the references to columns and add each array from the column in a new array, creating a matrix this way.
+
+```GDScript
+func _process(delta):
+	if(repeat):
+		time +=delta
+	
+		if time >= bps:
+			
+			time -=bps
+			array2D[current_column][0].panel_turnOn()
+			for i in array2D[current_column]:
+				if(i.can_play):
+					i.play()
+			array2D[current_column][0].panel_turnOff()
+			current_column +=1
+		if(current_column > array2D.size() - 1):
+			current_column = 0
+
+```
+
+In the process function, I check if the button is activated, if it is it adds delta time to the time variable and checks if it is bigger than the bps time ( beats per second).
+Then it goes through the current column and checks if the button can play and play it if it is true.
+After that, it adds +1 to current_column so that on the next beat it will check the next column.
+Finally, it checks if it went through the whole array and resets the value of current_column to zero, which resets the loop.
+
+```GDScript
+func _on_clear_pressed():
+	for i in array2D.size():
+		for j in array2D[i].size():
+			array2D[i][j].toggleOff()
+	pass
+```
+The behavior of the clear button. It goes through each element in the matrix and resets it.
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/08d9ea38-74b2-4c8e-b3b9-e52bdd647eaf)
+
+The effects panel works pretty easily
+
+```GDScript
+@onready var index = AudioServer.get_bus_index("Recorder")
+
+func _on_distortion_toggled(toggled_on):
+	AudioServer.set_bus_effect_enabled(index,2,toggled_on)
+	pass # Replace with function body.
+```
+I get the index of the desired bus that each sound is switched to. And on each signal from the button change the enabled value to the current state of the button.
 
 ## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
 | Class/asset | Source |
 |-----------|-----------|
-| MyClass.cs | Self written |
-| MyClass1.cs | Modified from [reference]() |
-| MyClass2.cs | From [reference]() |
+| effects_swithcer.gd | Self written |
+| Metronome.gd | Mostly self written, sequencer was modified from [reference](https://www.reddit.com/r/godot/comments/15jqlqh/how_do_i_make_a_metronome_that_activates_triggers/) |
+| mouseFollow.gd | Self written |
+| Panel.gd | Modified from [reference](https://godotforums.org/d/28197-what-s-the-formula-to-change-audioeffectpitchshift-in-order-to-have-all-the-notes) |
+| column.gd | Self written |
+| button.gd | Self written, pitch sound was modified from [reference](https://godotforums.org/d/28197-what-s-the-formula-to-change-audioeffectpitchshift-in-order-to-have-all-the-notes) |
+
+
 
 ## References
 
