@@ -256,30 +256,42 @@ Class Group:
 # Maciej
 ## Project Title
 
-Name:
+Name: Alien Bass Guitar
 
-Student Number: 
+Student Number: C23513423
 
-Class Group:
+Class Group: Ihor, Oleksandra, Marko, Maciej (playful-music-experience-ihorsteam)
 
 ## Description of the project
-
+For this project I wanted to create a bass guitar with a unique visual design reminiscent of an organ. I wanted it to be functional when using a computer keyboard, but other input devices are applicable if they were to be correctly assigned in the Godot Input Map.
 ## Instructions for use
-
+The Alien Bass Guitar has a full scale of notes from E1 to E2, including the sharp notes. To play the notes press the corresponding numbers on a keyboard from "1" to "0" and then from "Q" to "E". (ex. "1" corresponds to E note and "Q" corresopnds to the D note)
 ## How it works
+The project`s code takes input from the keyboard through the input map.
+
+It tells the program what to do on a specific input.
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145370257/d4f735d5-120f-4fc0-b09c-bda9f4af2cb0)
+
+The node hierarchy contains 2D sprites for images, as well as separate audio sources for the different musical notes. 
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145370257/6a0ef842-db16-4c10-8e0d-2e47ca82f593)
+
+The code gains access to these audio sources and triggers them when an input from the person playing is detected. 
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145370257/4eff7d3b-5a3f-4404-a7eb-0771c24926a1)
+
+The inputs also trigger colourful flashes of light for each note played.
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145370257/d8192b87-e89c-4f7c-9d79-b573b4086280)
+This is also triggered by the input, which gains access to specific 2D sprites in the hierarchy and sets them as "visible" when played and "invisible" when the played button is released.
 
 ## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
 | Class/asset | Source |
 |-----------|-----------|
-| MyClass.cs | Self written |
-| MyClass1.cs | Modified from [reference]() |
-| MyClass2.cs | From [reference]() |
+| Bass.gd | Self written |
 
 ## References
 
 ## What I am most proud of in the assignment
-
+I am proud of coming up with an interesting visual design for the virtual instrument.
 
 # Putting work together
 
