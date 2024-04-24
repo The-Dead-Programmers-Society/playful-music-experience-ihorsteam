@@ -1,4 +1,5 @@
-#Ihor
+# Ihor
+
 ## Jaw Harp Sequencer
 
 Name: Ihor Korovanenko
@@ -38,6 +39,24 @@ In the sequencer panel itself, notes can be activated or deactivated and each ro
 
 
 ## How it works
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/12dca506-7299-4796-9636-e1bf56b69ebf)
+
+I created a scene with a column of the sequencer that contains 7 buttons
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/d01a6cb5-baeb-46e6-8656-7a96ab2b2e86)
+
+Each button has AudioStreamPlayer2D attached to it, a particle effect(visual part), and a button script
+
+Button script has a few main functions
+
+```GDScript
+func pitch_sound(note: float):
+	var pitch = pow(2, note/12.0)
+	audio.pitch_scale = pitch
+```
+This function changes the pitch of the sound to adjust it to a certain note
+
+
 
 
 
