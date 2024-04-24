@@ -37,6 +37,7 @@ offset_right = 1152.0
 offset_bottom = 648.0
 
 [node name="C1_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 336.0
 offset_top = 39.0
 offset_right = 386.0
@@ -58,6 +59,7 @@ text = "
 C"
 
 [node name="D_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 388.0
 offset_top = 39.0
 offset_right = 438.0
@@ -69,6 +71,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Csharp_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 372.0
 offset_top = 39.0
 offset_right = 402.0
@@ -79,6 +82,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="E_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 440.0
 offset_top = 39.0
 offset_right = 490.0
@@ -90,6 +94,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Dsharp_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 427.0
 offset_top = 39.0
 offset_right = 457.0
@@ -100,6 +105,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="F_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 492.0
 offset_top = 39.0
 offset_right = 542.0
@@ -111,6 +117,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="G_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 544.0
 offset_top = 39.0
 offset_right = 594.0
@@ -122,6 +129,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Fsharp_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 529.0
 offset_top = 39.0
 offset_right = 559.0
@@ -132,6 +140,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="A_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 596.0
 offset_top = 39.0
 offset_right = 646.0
@@ -143,6 +152,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Gsharp_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 580.0
 offset_top = 39.0
 offset_right = 610.0
@@ -153,6 +163,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="B_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 648.0
 offset_top = 39.0
 offset_right = 698.0
@@ -164,6 +175,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Asharp_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 632.0
 offset_top = 39.0
 offset_right = 662.0
@@ -174,6 +186,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="C2_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 700.0
 offset_top = 39.0
 offset_right = 750.0

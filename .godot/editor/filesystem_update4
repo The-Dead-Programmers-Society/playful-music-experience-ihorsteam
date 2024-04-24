@@ -1,20 +1,12 @@
 res://default_bus_layout.tres
 res://default_env.tres
-<<<<<<< Updated upstream
-res://main_scene.tscn
-=======
 res://MarkoFiles/Scenes/markoScene.tscn
->>>>>>> Stashed changes
 res://IhorsFiles/styles/normal_button.tres
 res://IhorsFiles/styles/hover.tres
 res://IhorsFiles/styles/pressed_button.tres
 res://IhorsFiles/styles/regular_button.tres
 res://IhorsFiles/styles/hover_2.tres
-<<<<<<< Updated upstream
-res://IhorsFiles/scripts/menu.gd
-res://AlexFiles/styles/button_pressed.tres
-=======
+res://MaciekScene.tscn
+res://MaciejFiles/Scripts/Bass.gd
 res://IhorsScene.tscn
 res://AlexFiles/scenes/alex_scene.tscn
-res://MarkoFiles/Scripts/markoScene.gd
->>>>>>> Stashed changes
