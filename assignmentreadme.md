@@ -281,6 +281,20 @@ Class Group:
 ## What I am most proud of in the assignment
 
 
+# Putting work together
+
+## Instructions for use
+
+## How it works
+
+## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
+
+| Class/asset | Source |
+|-----------|-----------|
+| MyClass.cs | Self written |
+| MyClass1.cs | Modified from [reference]() |
+| MyClass2.cs | From [reference]() |
+
 
 
 
