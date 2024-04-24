@@ -242,16 +242,18 @@ Class Group:
 ## What I am most proud of in the assignment
 
 # Oleksandra 
-## Project Title
+## Crazy Hung Drum
 
-Name:
+Name: Oleksandra Kochkina
 
-Student Number: 
+Student Number: D22124392
 
-Class Group:
+Class Group: TU984/1
+
+Group:  Ihor, Oleksandra, Marko, Maciej (playful-music-experience-ihorsteam)
 
 ## Description of the project
-
+I wanted to create something interactive for a user and I decided to create a hung drum with buttons to "play" it with user's mouse. I also added buttons with effects and a slider to it more fun and interesting to play. 
 ## Instructions for use
 
 ## How it works
