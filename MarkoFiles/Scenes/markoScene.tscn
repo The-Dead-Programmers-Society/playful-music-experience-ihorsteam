@@ -1,8 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://dqxmfoab6lh3y"]
+[gd_scene load_steps=19 format=3 uid="uid://dqxmfoab6lh3y"]
 
 [ext_resource type="Script" path="res://MarkoFiles/Scripts/markoScene.gd" id="1_vjrrg"]
+[ext_resource type="Texture2D" uid="uid://c37ggp414ncmq" path="res://MarkoFiles/imgs/redbg.jpg" id="2_5jxpu"]
 [ext_resource type="AudioStream" uid="uid://dw35eitwqult2" path="res://MarkoFiles/Audio/dog_barking.wav" id="3_xnv22"]
 [ext_resource type="AudioStream" uid="uid://drulthqc5w35o" path="res://MarkoFiles/Audio/C1.wav" id="4_yybaj"]
+[ext_resource type="Texture2D" uid="uid://b5s5340ky2krb" path="res://MarkoFiles/imgs/download.jpg" id="5_iks6d"]
+[ext_resource type="AudioStream" uid="uid://4alrl7oc68dj" path="res://MarkoFiles/Audio/BassDrum.wav" id="6_5n8ig"]
+[ext_resource type="AudioStream" uid="uid://da8b3rtqdpnk0" path="res://MarkoFiles/Audio/snareDrum.wav" id="7_1k7gl"]
+[ext_resource type="AudioStream" uid="uid://bve5o6sth1e7d" path="res://MarkoFiles/Audio/HiHat2.wav" id="8_y2gia"]
+[ext_resource type="AudioStream" uid="uid://b0xl4n5g0ks6r" path="res://MarkoFiles/Audio/CrashCymbal.wav" id="9_er1wm"]
+[ext_resource type="AudioStream" uid="uid://bnpwca4iowjb6" path="res://MarkoFiles/Audio/cowbell.wav" id="10_2kjnj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gyw4d"]
 bg_color = Color(1, 1, 1, 1)
@@ -27,21 +34,44 @@ bg_color = Color(0.27451, 0.27451, 0.27451, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8garq"]
 bg_color = Color(1, 1, 1, 1)
 
-[node name="Node2D2" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 script = ExtResource("1_vjrrg")
+
+[node name="Download" type="Sprite2D" parent="."]
+modulate = Color(0.654902, 0.627451, 0.623529, 1)
+self_modulate = Color(0.705882, 0.74902, 0.890196, 1)
+position = Vector2(575, 326)
+scale = Vector2(4.49027, 3.33163)
+texture = ExtResource("5_iks6d")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 647.0
+offset_bottom = 396.0
+
+[node name="Redbg" type="Sprite2D" parent="Control"]
+modulate = Color(0.501961, 0.458824, 0.482353, 1)
+self_modulate = Color(0.0117647, 0.545098, 0.882353, 1)
+position = Vector2(347.875, 207.75)
+scale = Vector2(0.702206, 0.707108)
+texture = ExtResource("2_5jxpu")
 
 [node name="C1_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 336.0
 offset_top = 39.0
 offset_right = 386.0
 offset_bottom = 314.0
+=======
+offset_left = 140.0
+offset_top = 64.0
+offset_right = 190.0
+offset_bottom = 339.0
+>>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_gyw4d")
@@ -59,11 +89,18 @@ text = "
 C"
 
 [node name="D_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 388.0
 offset_top = 39.0
 offset_right = 438.0
 offset_bottom = 314.0
+=======
+offset_left = 192.0
+offset_top = 64.0
+offset_right = 242.0
+offset_bottom = 339.0
+>>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_hwkuv")
@@ -71,22 +108,36 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Csharp_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 372.0
 offset_top = 39.0
 offset_right = 402.0
 offset_bottom = 203.0
+=======
+offset_left = 176.0
+offset_top = 64.0
+offset_right = 206.0
+offset_bottom = 228.0
+>>>>>>> Stashed changes
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_uqogu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="E_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 440.0
 offset_top = 39.0
 offset_right = 490.0
 offset_bottom = 314.0
+=======
+offset_left = 244.0
+offset_top = 64.0
+offset_right = 294.0
+offset_bottom = 339.0
+>>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -94,22 +145,36 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Dsharp_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 427.0
 offset_top = 39.0
 offset_right = 457.0
 offset_bottom = 203.0
+=======
+offset_left = 231.0
+offset_top = 64.0
+offset_right = 261.0
+offset_bottom = 228.0
+>>>>>>> Stashed changes
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_uqogu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="F_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 492.0
 offset_top = 39.0
 offset_right = 542.0
 offset_bottom = 314.0
+=======
+offset_left = 296.0
+offset_top = 64.0
+offset_right = 346.0
+offset_bottom = 339.0
+>>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -117,11 +182,18 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="G_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 544.0
 offset_top = 39.0
 offset_right = 594.0
 offset_bottom = 314.0
+=======
+offset_left = 348.0
+offset_top = 64.0
+offset_right = 398.0
+offset_bottom = 339.0
+>>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -129,22 +201,36 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Fsharp_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 529.0
 offset_top = 39.0
 offset_right = 559.0
 offset_bottom = 203.0
+=======
+offset_left = 333.0
+offset_top = 64.0
+offset_right = 363.0
+offset_bottom = 228.0
+>>>>>>> Stashed changes
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_uqogu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="A_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 596.0
 offset_top = 39.0
 offset_right = 646.0
 offset_bottom = 314.0
+=======
+offset_left = 400.0
+offset_top = 64.0
+offset_right = 450.0
+offset_bottom = 339.0
+>>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -152,22 +238,36 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Gsharp_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 580.0
 offset_top = 39.0
 offset_right = 610.0
 offset_bottom = 203.0
+=======
+offset_left = 384.0
+offset_top = 64.0
+offset_right = 414.0
+offset_bottom = 228.0
+>>>>>>> Stashed changes
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_uqogu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="B_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 648.0
 offset_top = 39.0
 offset_right = 698.0
 offset_bottom = 314.0
+=======
+offset_left = 452.0
+offset_top = 64.0
+offset_right = 502.0
+offset_bottom = 339.0
+>>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -175,22 +275,36 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wtxne")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ix8k")
 
 [node name="Asharp_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 632.0
 offset_top = 39.0
 offset_right = 662.0
 offset_bottom = 203.0
+=======
+offset_left = 436.0
+offset_top = 64.0
+offset_right = 466.0
+offset_bottom = 228.0
+>>>>>>> Stashed changes
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_uqogu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_70xpt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6ihks")
 
 [node name="C2_button" type="Button" parent="Control"]
+<<<<<<< Updated upstream
 layout_mode = 0
 offset_left = 700.0
 offset_top = 39.0
 offset_right = 750.0
 offset_bottom = 314.0
+=======
+offset_left = 504.0
+offset_top = 64.0
+offset_right = 554.0
+offset_bottom = 339.0
+>>>>>>> Stashed changes
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_8garq")
@@ -207,13 +321,60 @@ text = "
 
 C1"
 
-[node name="Dawg" type="Button" parent="."]
-offset_left = 959.0
-offset_top = 60.0
-offset_right = 1059.0
-offset_bottom = 160.0
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 68.0
+offset_bottom = 61.0
+
+[node name="DrumBG" type="Sprite2D" parent="Control2"]
+modulate = Color(0, 0, 0, 0.490196)
+position = Vector2(915.594, 242.719)
+scale = Vector2(0.468648, 0.952359)
+texture = ExtResource("2_5jxpu")
+
+[node name="BassDrum" type="Button" parent="Control2"]
+offset_left = 816.0
+offset_top = 87.0
+offset_right = 896.0
+offset_bottom = 167.0
+text = "Bass"
+
+[node name="Snare" type="Button" parent="Control2"]
+offset_left = 933.0
+offset_top = 90.0
+offset_right = 1013.0
+offset_bottom = 170.0
+text = "Snare"
+
+[node name="HiHat" type="Button" parent="Control2"]
+offset_left = 936.0
+offset_top = 203.0
+offset_right = 1016.0
+offset_bottom = 283.0
+text = "Crash"
+
+[node name="Crash" type="Button" parent="Control2"]
+offset_left = 815.0
+offset_top = 207.0
+offset_right = 895.0
+offset_bottom = 287.0
+text = "HiHat"
+
+[node name="Cowbell" type="Button" parent="Control2"]
+offset_left = 821.0
+offset_top = 310.0
+offset_right = 901.0
+offset_bottom = 390.0
+text = "Cowbell"
+
+[node name="Dawg" type="Button" parent="Control2"]
+offset_left = 935.0
+offset_top = 308.0
+offset_right = 1015.0
+offset_bottom = 388.0
 keep_pressed_outside = true
-text = "dawg"
+text = "Dog"
 
 [node name="dogbark" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_xnv22")
@@ -221,11 +382,10 @@ volume_db = 15.0
 bus = &"MarkoSounds"
 
 [node name="HSlider" type="HSlider" parent="."]
-offset_left = 158.0
-offset_top = 124.0
-offset_right = 477.0
-offset_bottom = 223.0
-rotation = 1.5708
+offset_left = 196.0
+offset_top = 433.0
+offset_right = 516.0
+offset_bottom = 533.0
 
 [node name="C1" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_yybaj")
@@ -290,6 +450,21 @@ bus = &"MarkoSounds"
 stream = ExtResource("4_yybaj")
 pitch_scale = 2.0
 
+[node name="BassDrum" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_5n8ig")
+
+[node name="HiHat" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_y2gia")
+
+[node name="Crash" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_er1wm")
+
+[node name="cowbell" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_2kjnj")
+
+[node name="snareDrum" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_1k7gl")
+
 [connection signal="button_down" from="Control/C1_button" to="." method="_on_c_1_button_down"]
 [connection signal="button_down" from="Control/D_button" to="." method="_on_d_button_button_down"]
 [connection signal="button_down" from="Control/Csharp_button" to="." method="_on_csharp_button_button_down"]
@@ -303,6 +478,11 @@ pitch_scale = 2.0
 [connection signal="button_down" from="Control/B_button" to="." method="_on_b_button_button_down"]
 [connection signal="button_down" from="Control/Asharp_button" to="." method="_on_asharp_button_button_down"]
 [connection signal="button_down" from="Control/C2_button" to="." method="_on_c_2_button_button_down"]
-[connection signal="button_down" from="Dawg" to="." method="_on_dawg_button_down"]
-[connection signal="gui_input" from="Dawg" to="." method="_on_button_gui_input"]
+[connection signal="button_down" from="Control2/BassDrum" to="." method="_on_bass_drum_button_down"]
+[connection signal="button_down" from="Control2/Snare" to="." method="_on_snare_button_down"]
+[connection signal="button_down" from="Control2/HiHat" to="." method="_on_hi_hat_button_down"]
+[connection signal="button_down" from="Control2/Crash" to="." method="_on_crash_button_down"]
+[connection signal="button_down" from="Control2/Cowbell" to="." method="_on_cowbell_button_down"]
+[connection signal="button_down" from="Control2/Dawg" to="." method="_on_dawg_button_down"]
+[connection signal="gui_input" from="Control2/Dawg" to="." method="_on_button_gui_input"]
 [connection signal="drag_ended" from="HSlider" to="." method="_on_h_slider_drag_ended"]

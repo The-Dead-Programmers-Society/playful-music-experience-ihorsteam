@@ -1,23 +1,13 @@
-<<<<<<< Updated upstream
+AudioStreamPlayer2D
+Sprite2D
+Control
 Button
 GridContainer
 Panel
 MarginContainer
-=======
-<<<<<<< Updated upstream
 MarginContainer
 GridContainer
-=======
-Button
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-Control
-AudioStreamPlayer2D
 AudioButton
-Sprite2D
 Label
 VSlider
 GPUParticles2D
-HSlider
-SubViewport
-Camera2D

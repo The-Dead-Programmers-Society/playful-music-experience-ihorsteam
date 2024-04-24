@@ -1,11 +1,6 @@
 extends Node2D
 
 
-func _on_button_pressed():
-	$dogbark.play()
-	pass # Replace with function body.
-	
-
 func _on_h_slider_value_changed(value):
 	var pitch:AudioEffectPitchShift = AudioServer.get_bus_effect(0,0)
 	
@@ -41,6 +36,16 @@ func _process(_delta):
 		$B.play()
 	if Input.is_action_just_pressed("C2note"):
 		$C2.play()
+	if Input.is_action_just_pressed("bassdrum"):
+		$BassDrum.play()
+	if Input.is_action_just_pressed("snaredrum"):
+		$snareDrum.play()
+	if Input.is_action_just_pressed("hihat"):
+		$HiHat.play()
+	if Input.is_action_just_pressed("crash"):
+		$Crash.play()
+	if Input.is_action_just_pressed("cowbell"):
+		$cowbell.play()
 
 
 func _on_c_1_button_down():
@@ -93,4 +98,28 @@ func _on_asharp_button_button_down():
 
 func _on_c_2_button_button_down():
 	$C2.play()
+	pass # Replace with function body.
+
+func _on_bass_drum_button_down():
+	$BassDrum.play()
+	pass # Replace with function body.
+
+func _on_dawg_button_down():
+	$dogbark.play()
+	pass # Replace with function body.
+
+func _on_snare_button_down():
+	$snareDrum.play()
+	pass # Replace with function body.
+
+func _on_hi_hat_button_down():
+	$HiHat.play()
+	pass # Replace with function body.
+
+func _on_crash_button_down():
+	$Crash.play()
+	pass # Replace with function body.
+
+func _on_cowbell_button_down():
+	$cowbell.play()
 	pass # Replace with function body.
