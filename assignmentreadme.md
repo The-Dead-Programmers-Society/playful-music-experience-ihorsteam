@@ -13,7 +13,7 @@ The idea was to create a sequencer that uses jaw harp sound, you can control bpm
 
 # Instructions for use
 ![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/7b6548ca-1b59-4191-b7f6-0ecea9092ad6)
-Start button that starts and stops the sequencer
+\n Start button that starts and stops the sequencer
 
 ![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/662a7f96-c826-41bd-9aa7-60eb3ff6cfe3)
 The clear button clears all the notes the user has put on a sequencer
