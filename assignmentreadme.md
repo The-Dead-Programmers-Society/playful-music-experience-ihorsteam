@@ -54,7 +54,53 @@ func pitch_sound(note: float):
 	var pitch = pow(2, note/12.0)
 	audio.pitch_scale = pitch
 ```
-This function changes the pitch of the sound to adjust it to a certain note
+This function changes the pitch of the audioStream to adjust it to a certain note.
+
+```GDScript
+func play():
+	note.restart()
+	audio.play()
+	await get_tree().create_timer(0.2).timeout
+	note.emitting = false
+```
+This is a basic behavior of the button.
+
+```GDScript
+func _on_toggled(toggled_on):
+	can_play = toggled_on
+	pass 
+```
+This is a signal from the button that tells whether sound can be played or not.
+
+```GDScript
+func toggleOff():
+	button_pressed = false
+```
+This function resets the button to a deactivated state.
+
+```GDScript
+@export var buttons = []
+@onready var c = $C
+@onready var d = $D
+@onready var e = $E
+@onready var f = $F
+@onready var g = $G
+@onready var a = $A
+@onready var b = $B
+
+func _ready():
+	buttons.append(c)
+	buttons.append(d)
+	buttons.append(e)
+	buttons.append(f)
+	buttons.append(g)
+	buttons.append(a)
+	buttons.append(b)
+```
+Then the column of buttons itself has a script with an array setup in it.
+
+
+
 
 
 
