@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://ba4lw4l2qrc"]
+[gd_scene load_steps=8 format=3 uid="uid://ba4lw4l2qrc"]
 
 [ext_resource type="PackedScene" uid="uid://nu87ihhbfvsw" path="res://IhorsScene.tscn" id="1_k7cym"]
 [ext_resource type="ButtonGroup" uid="uid://keoq006cwk0r" path="res://IhorsFiles/buttonGroups/menu.tres" id="2_82lml"]
 [ext_resource type="Script" path="res://IhorsFiles/scripts/menu.gd" id="2_kplms"]
+[ext_resource type="PackedScene" uid="uid://dqxmfoab6lh3y" path="res://MarkoFiles/Scenes/markoScene.tscn" id="3_4d1ye"]
 [ext_resource type="PackedScene" uid="uid://tfden3vv2rts" path="res://AlexFiles/scenes/alex_scene.tscn" id="4_ha5ce"]
+[ext_resource type="PackedScene" uid="uid://byfg1eu3qul41" path="res://MaciekScene.tscn" id="4_uxbxa"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r70ai"]
 
@@ -21,6 +23,12 @@ grow_vertical = 2
 visible = false
 layout_mode = 1
 
+[node name="Node2D" parent="." instance=ExtResource("3_4d1ye")]
+visible = false
+
+[node name="Bass_Scene" parent="." instance=ExtResource("4_uxbxa")]
+visible = false
+
 [node name="Menu" type="Panel" parent="."]
 layout_mode = 0
 offset_right = 1152.0
@@ -37,7 +45,7 @@ grow_vertical = 2
 columns = 4
 
 [node name="Jaw Harp" type="Button" parent="Menu/GridContainer"]
-custom_minimum_size = Vector2(300, 0)
+custom_minimum_size = Vector2(285, 0)
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/focus = SubResource("StyleBoxEmpty_r70ai")
@@ -47,7 +55,7 @@ button_group = ExtResource("2_82lml")
 text = "Jaw Harp"
 
 [node name="Hand Drum" type="Button" parent="Menu/GridContainer"]
-custom_minimum_size = Vector2(300, 0)
+custom_minimum_size = Vector2(285, 0)
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/focus = SubResource("StyleBoxEmpty_r70ai")
@@ -55,5 +63,25 @@ toggle_mode = true
 button_group = ExtResource("2_82lml")
 text = "Hand Drum"
 
+[node name="Piano" type="Button" parent="Menu/GridContainer"]
+custom_minimum_size = Vector2(285, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/focus = SubResource("StyleBoxEmpty_r70ai")
+toggle_mode = true
+button_group = ExtResource("2_82lml")
+text = "Piano"
+
+[node name="Bass" type="Button" parent="Menu/GridContainer"]
+custom_minimum_size = Vector2(285, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/focus = SubResource("StyleBoxEmpty_r70ai")
+toggle_mode = true
+button_group = ExtResource("2_82lml")
+text = "Bass"
+
 [connection signal="toggled" from="Menu/GridContainer/Jaw Harp" to="Menu" method="_on_jaw_harp_toggled"]
 [connection signal="toggled" from="Menu/GridContainer/Hand Drum" to="Menu" method="_on_hand_drum_toggled"]
+[connection signal="toggled" from="Menu/GridContainer/Piano" to="Menu" method="_on_piano_toggled"]
+[connection signal="toggled" from="Menu/GridContainer/Bass" to="Menu" method="_on_bass_toggled"]
