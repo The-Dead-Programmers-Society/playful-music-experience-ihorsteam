@@ -300,7 +300,6 @@ This is also triggered by the input, which gains access to specific 2D sprites i
 | Class/asset | Source |
 |-----------|-----------|
 | Bass.gd | Self written |
-
 | E.wav   | Self recorded|
 | F.wav   | Self recorded|
 | Fsharp.wav   | Self recorded|
