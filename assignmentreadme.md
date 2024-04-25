@@ -275,13 +275,13 @@ Key inputs were mapped according to personal preference.
 
 | Class/asset | Source |
 |-----------|-----------|
-| MyClass.cs | Self written |
-| MyClass1.cs | Modified from [reference]() |
-| MyClass2.cs | From [reference]() |
-
-## References
+| markoScene.gd | Self written |
+| Audio  | Bosca Ceoil by Terry Cavanagh |
+| Audio  | pixabay.com |
+| download.jpg | Modified from [reference](https://en.wikipedia.org/wiki/Keyboard_Cat) |
 
 ## What I am most proud of in the assignment
+It was my first ever project in Godot. I am glad this worked almost like I wanted to.
 
 # Oleksandra 
 ## Crazy Hand Drum
