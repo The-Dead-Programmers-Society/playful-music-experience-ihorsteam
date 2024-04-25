@@ -334,7 +334,7 @@ Recording button
 
 ![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/334019b4-479a-48f8-8fd4-319ae7ab0601)
 
-Scrip:
+Script:
 
 After enough time passes (based on a beat per second rate), this function plays a recorded audio.
 
