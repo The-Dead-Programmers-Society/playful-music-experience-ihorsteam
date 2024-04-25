@@ -48,10 +48,10 @@ texture = ExtResource("5_iks6d")
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 1.0
-offset_top = 3.0
-offset_right = 647.0
-offset_bottom = 396.0
+offset_left = 4.0
+offset_top = 1.0
+offset_right = 653.0
+offset_bottom = 402.0
 
 [node name="Redbg" type="Sprite2D" parent="Control"]
 modulate = Color(0.501961, 0.458824, 0.482353, 1)
@@ -239,56 +239,56 @@ offset_bottom = 61.0
 
 [node name="DrumBG" type="Sprite2D" parent="Control2"]
 modulate = Color(0, 0, 0, 0.490196)
-position = Vector2(915.594, 242.719)
+position = Vector2(894.406, 320.281)
 scale = Vector2(0.468648, 0.952359)
 texture = ExtResource("2_5jxpu")
 
 [node name="BassDrum" type="Button" parent="Control2"]
 layout_mode = 0
-offset_left = 816.0
-offset_top = 87.0
-offset_right = 896.0
-offset_bottom = 167.0
+offset_left = 794.812
+offset_top = 164.562
+offset_right = 874.812
+offset_bottom = 244.562
 text = "Bass"
 
 [node name="Snare" type="Button" parent="Control2"]
 layout_mode = 0
-offset_left = 933.0
-offset_top = 90.0
-offset_right = 1013.0
-offset_bottom = 170.0
+offset_left = 913.0
+offset_top = 165.0
+offset_right = 993.0
+offset_bottom = 245.0
 text = "Snare"
 
 [node name="HiHat" type="Button" parent="Control2"]
 layout_mode = 0
-offset_left = 936.0
-offset_top = 203.0
-offset_right = 1016.0
-offset_bottom = 283.0
+offset_left = 914.0
+offset_top = 285.0
+offset_right = 994.0
+offset_bottom = 365.0
 text = "HiHat"
 
 [node name="Crash" type="Button" parent="Control2"]
 layout_mode = 0
-offset_left = 815.0
-offset_top = 207.0
-offset_right = 895.0
-offset_bottom = 287.0
+offset_left = 793.812
+offset_top = 284.562
+offset_right = 873.812
+offset_bottom = 364.562
 text = "Crash"
 
 [node name="Cowbell" type="Button" parent="Control2"]
 layout_mode = 0
-offset_left = 821.0
-offset_top = 310.0
-offset_right = 901.0
-offset_bottom = 390.0
+offset_left = 792.0
+offset_top = 397.0
+offset_right = 872.0
+offset_bottom = 477.0
 text = "Cowbell"
 
 [node name="Dawg" type="Button" parent="Control2"]
 layout_mode = 0
-offset_left = 935.0
-offset_top = 308.0
-offset_right = 1015.0
-offset_bottom = 388.0
+offset_left = 914.0
+offset_top = 395.0
+offset_right = 994.0
+offset_bottom = 475.0
 keep_pressed_outside = true
 text = "Dog"
 
@@ -296,12 +296,6 @@ text = "Dog"
 stream = ExtResource("3_xnv22")
 volume_db = 15.0
 bus = &"MarkoSounds"
-
-[node name="HSlider" type="HSlider" parent="."]
-offset_left = 196.0
-offset_top = 433.0
-offset_right = 516.0
-offset_bottom = 533.0
 
 [node name="C1" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_yybaj")
@@ -404,4 +398,3 @@ stream = ExtResource("11_tey5c")
 [connection signal="button_down" from="Control2/Cowbell" to="." method="_on_cowbell_button_down"]
 [connection signal="button_down" from="Control2/Dawg" to="." method="_on_dawg_button_down"]
 [connection signal="gui_input" from="Control2/Dawg" to="." method="_on_button_gui_input"]
-[connection signal="drag_ended" from="HSlider" to="." method="_on_h_slider_drag_ended"]
