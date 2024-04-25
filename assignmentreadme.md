@@ -285,25 +285,94 @@ User can press buttons which are located on the drum to make sounds. They also c
 ## How it works
 I started with creating the hand drum and adding transparent buttons with marcked notes on it 
 ![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/9a2639ce-f29d-4893-b443-e6aa3d086e41)
+
 I used AudioStreamPlayer2D and scripts for buttons
 
 Functions in scripts:
-This function adjusts the sound based on a current note when the game/scene starts
-![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/7f477928-87a9-4c6d-a991-4041f21f231a)
 
+This function adjusts the sound based on a current note when the game/scene starts
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/0e2bf77f-eb84-4f31-9826-cfea048f7ad2)
+
+
+Next function adjusts the sound to a certain note by pitch
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/1fe24340-fe85-4b1e-baea-3d53a595c4c0)
+
+
+and the final function checks if the recorder is running and adds the current note to the list of recorded actions
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/5e893572-ca66-43c9-8854-bf0b1315fc5a)
+
+
+For UI I created panels with buttons and BPM slider
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/b3f5406b-ed31-40c2-8cb1-ece7d27a3e90)
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/7e158025-f510-4ff3-845b-f1273834e20a)
+
+Script for buttons with effects
+
+Those functions apply chosen effects on pressed buttons with notes
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/f7a59db0-cb12-4d04-ab11-849d23e0406e)
+
+BPM slider
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/f0d48f11-c395-44d3-ac17-5bd4469b10a6)
+
+It pitches the sound of pressed notes
+
+Script:
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/95f8018e-0fe8-473e-9756-fc9aaa09b234)
+
+
+Recording button
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/d61b1045-f10c-4981-a430-9066cf947ab7)
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/334019b4-479a-48f8-8fd4-319ae7ab0601)
+
+Scrip:
+
+After enough time passes (based on a beat per second rate), this function plays a recorded audio.
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/bca9b32b-6df2-4a0c-ad97-2eab45af609d)
+
+This function clears recorded audio as you press the button again.
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/22d3509e-97f1-4bea-aa3c-eadf35f2e228)
+
+This function checks for existing recording so the button can not be pressed if nothing was recorded yet
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/e3532b24-f7bd-4ee7-ac09-6b68f8a6e56b)
+
+Play button
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/d703c70a-f4a6-4303-9ab2-024e52eeb34c)
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/aba95257-be27-42f8-9801-a30022f38a5b)
 
 
 ## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
 | Class/asset | Source |
 |-----------|-----------|
-| MyClass.cs | Self written |
-| MyClass1.cs | Modified from [reference]() |
-| MyClass2.cs | From [reference]() |
+| effects_switcher.gd | Self written |
+| Panel.gd | Modified from [reference](https://godotforums.org/d/28197-what-s-the-formula-to-change-audioeffectpitchshift-in-order-to-have-all-the-notes) |
+| button.gd  | From [reference](https://godotforums.org/d/28197-what-s-the-formula-to-change-audioeffectpitchshift-in-order-to-have-all-the-notes) |
+| hangdrum.png | Self drawn |
+| JHP C --.wav | From [reference](https://forums.synthstrom.com/discussion/392/handpan-hang-drum-samples) |
 
-## References
+## Video
+
+![mqdefault](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/cbc82443-1346-4017-b617-5ed733e83296)
+
 
 ## What I am most proud of in the assignment
+
+I am mostly proud of understanding the code and what it does even when it is not as good as it should be, but this experience will help me in my future projects.
 
 # Maciej
 ## Project Title
