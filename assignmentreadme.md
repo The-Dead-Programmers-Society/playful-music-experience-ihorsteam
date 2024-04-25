@@ -252,8 +252,24 @@ B = Bark sound
 N = Cowbell
 
 
-
 ## How it works
+The project is sorely depended on buttons
+
+<img width="85" alt="Screenshot 2024-04-25 015953" src="https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145371011/c7f4524a-7a27-42bd-a17b-1cbbce105007">
+
+Every button was assigned manually to the Node2D, using the button_down signal to play the assigned audio.
+
+<img width="284" alt="Screenshot 2024-04-25 020210" src="https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145371011/446124fe-fa50-457e-93c0-3ecee68f3124">
+
+<img width="71" alt="Screenshot 2024-04-25 020029" src="https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145371011/eec25726-6dbb-4c3c-b517-5b075feaf120">
+
+For the keyboard input, a function is used which plays the said Action.
+Key inputs were mapped according to personal preference.
+
+<img width="364" alt="Screenshot 2024-04-25 020148" src="https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145371011/1f1bb6b0-a200-4bce-9804-cd941b3c56c6">
+
+<img width="446" alt="Screenshot 2024-04-25 022359" src="https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145371011/af565ca0-d940-4b0a-b8c6-77cd97cc1c79">
+
 
 ## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
