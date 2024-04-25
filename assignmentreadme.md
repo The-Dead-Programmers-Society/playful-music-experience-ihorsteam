@@ -215,7 +215,7 @@ I get the index of the desired bus that each sound is switched to. And on each s
 This was the first time I had used a matrix in any of my code. The experience gave me a better understanding of working with arrays and will eventually help to write shorter and more efficient code in the future 
 
 # Marko
-## Piano + Sounds
+## Piano + Sampler
 
 Name:Marko Prijic
 
@@ -225,9 +225,31 @@ Class Group:TU984/1
 
 ## Description of the project
 
-A short-scale playable piano/synth with selective percussion sounds
+A short-scale playable piano/synth with selective percussion sounds.
 
 ## Instructions for use
+
+On the left-hand side of the screen is located the "piano".
+
+<img width="178" alt="pianogodot" src="https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145371011/b8204d29-6521-4bc8-84c6-ed46e48a7d83">
+
+ 
+The user can either click buttons using the mouse left click, or use the keyboard to play the sounds.
+The keyboard input is as follows: 1Q2W34R5T6Y78 
+For white buttons use noumbers, and for black buttons use letters below them.
+
+On the right-hand side is the sampler with other sounds.
+
+<img width="122" alt="Screenshot 2024-04-25 015850" src="https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/145371011/b6fb8be2-e3ca-45fa-9692-54947f11b423">
+
+Like the piano, the user can either click the buttons or use the keyboard
+The keyboard input for buttons is: ZXCVBN
+Z = Bass drum
+X = Snare drum
+C = HiHat
+V = Crash cymbal
+B = Bark sound
+N = Cowbell
 
 
 
