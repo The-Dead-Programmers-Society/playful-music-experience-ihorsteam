@@ -261,7 +261,10 @@ I wanted to create something interactive for a user and I decided to create a hu
 ## Instructions for use
 User can press buttons which are located on the drum to make sounds. They also can record them, use the BPM slider, and use buttons with special effects which are located on the sides of the instrument to create their own music.
 ## How it works
-The H
+I started with creating the hung drum and adding transparent buttons with marcked notes on it 
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/9a2639ce-f29d-4893-b443-e6aa3d086e41)
+I used AudioStreamPlayer2D and scripts for buttons
+
 ## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
 | Class/asset | Source |
