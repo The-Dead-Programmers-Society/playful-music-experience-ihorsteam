@@ -337,17 +337,68 @@ I am proud of coming up withand creating an interesting visual design for the vi
 
 # Putting work together
 
+## Team members
+
+Ihor Korovanenko, Marko Prijic, Oleksandra Kochkina, Maciej Czajowski 
+
 ## Instructions for use
 
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/0596d1bb-5c47-4a11-aaa8-8997a33afd60)
+
+Use tabs to switch between different virtual instruments 
+
 ## How it works
+
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/105048323/68aa6a5b-080a-426a-b491-8458cb10baaa)
+
+All the scenes were put in one scene and hidden except for one
+
+---
+
+```GDScript
+func _ready():
+	piano.process_mode = 4
+	bass_scene.process_mode = 4
+```
+Since Marko's and Maciej scenes were using the same keys, we turned off the process in the scenes, so they don't make sounds at the same time.
+
+---
+
+```GDScript
+func _on_hand_drum_toggled(toggled_on):
+	alex_scene.visible = toggled_on
+	pass # Replace with function body.
+#
+
+func _on_piano_toggled(toggled_on):
+	piano.visible = toggled_on
+	var process
+	if(toggled_on):
+		process = 0
+	else:
+		process = 4
+	piano.process_mode = process
+	pass # Replace with function body.
+
+
+func _on_bass_toggled(toggled_on):
+	bass_scene.visible = toggled_on
+	var process
+	if(toggled_on):
+		process = 0
+	else:
+		process = 4
+	bass_scene.process_mode = process
+	pass 
+```
+Each button turns on and off scene depending on whether the button is toggled on or not.
 
 ## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
 | Class/asset | Source |
 |-----------|-----------|
-| MyClass.cs | Self written |
-| MyClass1.cs | Modified from [reference]() |
-| MyClass2.cs | From [reference]() |
+| menu.gd | Self-written |
+
 
 
 
