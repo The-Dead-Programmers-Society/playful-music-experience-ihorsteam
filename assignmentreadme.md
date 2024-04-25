@@ -215,17 +215,21 @@ I get the index of the desired bus that each sound is switched to. And on each s
 This was the first time I had used a matrix in any of my code. The experience gave me a better understanding of working with arrays and will eventually help to write shorter and more efficient code in the future 
 
 # Marko
-## Project Title
+## Piano + Sounds
 
-Name:
+Name:Marko Prijic
 
-Student Number: 
+Student Number: C23431692
 
-Class Group:
+Class Group:TU984/1
 
 ## Description of the project
 
+A short-scale playable piano/synth with selective percussion sounds
+
 ## Instructions for use
+
+
 
 ## How it works
 
