@@ -367,7 +367,7 @@ Play button
 
 ## Video
 
-![mqdefault](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/cbc82443-1346-4017-b617-5ed733e83296)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/oc6-ufKCNlk)](https://www.youtube.com/watch?v=oc6-ufKCNlk)
 
 
 ## What I am most proud of in the assignment
