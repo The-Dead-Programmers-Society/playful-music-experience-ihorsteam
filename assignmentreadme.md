@@ -246,7 +246,7 @@ A short-scale playable piano/synth with selective percussion sounds
 ## What I am most proud of in the assignment
 
 # Oleksandra 
-## Crazy Hund Drum
+## Crazy Hand Drum
 
 Name: Oleksandra Kochkina
 
@@ -261,9 +261,15 @@ I wanted to create something interactive for a user and I decided to create a hu
 ## Instructions for use
 User can press buttons which are located on the drum to make sounds. They also can record them, use the BPM slider, and use buttons with special effects which are located on the sides of the instrument to create their own music.
 ## How it works
-I started with creating the hund drum and adding transparent buttons with marcked notes on it 
+I started with creating the hand drum and adding transparent buttons with marcked notes on it 
 ![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/9a2639ce-f29d-4893-b443-e6aa3d086e41)
 I used AudioStreamPlayer2D and scripts for buttons
+
+Functions in scripts:
+This function adjusts the sound based on a current note when the game/scene starts
+![image](https://github.com/The-Dead-Programmers-Society/playful-music-experience-ihorsteam/assets/148790425/7f477928-87a9-4c6d-a991-4041f21f231a)
+
+
 
 ## List of classes/assets in the project and whether made yourself or modified or if its from a source, please give the reference
 
